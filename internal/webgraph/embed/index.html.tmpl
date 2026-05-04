@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{.Title}}</title>
+<style>
+{{.Styles}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="title">{{.Title}}</div>
+  <input id="search" type="search" placeholder="search nodes...">
+  <label class="toggle"><input type="checkbox" id="hide-data" /> hide data sources</label>
+  <label class="toggle"><input type="checkbox" id="collapse-modules" /> collapse modules</label>
+  <span class="hint">drag = pan, scroll = zoom, click = details</span>
+</header>
+<main>
+  <div id="cy"></div>
+  <aside id="panel" class="hidden">
+    <button id="panel-close" aria-label="close">×</button>
+    <div id="panel-body"></div>
+  </aside>
+</main>
+<script type="application/json" id="graph-data">{{.GraphJSON}}</script>
+<script>
+{{.Cytoscape}}
+</script>
+<script>
+{{.Dagre}}
+</script>
+<script>
+{{.CytoscapeDagre}}
+</script>
+<script>
+{{.App}}
+</script>
+</body>
+</html>

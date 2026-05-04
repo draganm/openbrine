@@ -199,6 +199,12 @@ func initCommands(
 			}, nil
 		},
 
+		"webgraph": func() (cli.Command, error) {
+			return &command.WebGraphCommand{
+				Meta: meta,
+			}, nil
+		},
+
 		"import": func() (cli.Command, error) {
 			return &command.ImportCommand{
 				Meta: meta,
