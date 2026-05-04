@@ -11,10 +11,10 @@ import (
 
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/opentofu/opentofu/internal/command/jsonentities"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/jsonentities"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func OutputsFromMap(outputValues map[string]*states.OutputValue) (jsonentities.Outputs, tfdiags.Diagnostics) {

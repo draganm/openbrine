@@ -18,10 +18,10 @@ import (
 	types "github.com/aws/aws-sdk-go-v2/service/s3/types"
 	"github.com/aws/smithy-go"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/remote"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/remote"
+	"github.com/draganm/openbrine/internal/states/statemgr"
 )
 
 func (b *Backend) Workspaces(ctx context.Context) ([]string, error) {

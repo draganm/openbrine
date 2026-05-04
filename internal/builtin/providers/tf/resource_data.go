@@ -12,9 +12,9 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func dataStoreResourceSchema() providers.Schema {

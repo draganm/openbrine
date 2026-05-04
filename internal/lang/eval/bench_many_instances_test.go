@@ -10,12 +10,12 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/lang/eval"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/evalglue"
-	"github.com/opentofu/opentofu/internal/providers"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/lang/eval"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/evalglue"
+	"github.com/draganm/openbrine/internal/providers"
 )
 
 // This test file contains a small collection of benchmarks, written using the benchmark

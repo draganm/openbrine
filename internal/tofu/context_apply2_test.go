@@ -24,19 +24,19 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/checks"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/plugins"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/checks"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/plugins"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/version"
 )
 
 // Test that the PreApply hook is called with the correct deposed key
@@ -607,7 +607,7 @@ output "out" {
 // mark as sensitive in the final state after apply, even if the values in
 // question were not yet available during the planning phase.
 //
-// For additional context, refer to https://github.com/opentofu/opentofu/issues/3367 .
+// For additional context, refer to https://github.com/draganm/openbrine/issues/3367 .
 func TestContext2Apply_sensitiveInsideUnknown(t *testing.T) {
 	m := testModuleInline(t, map[string]string{
 		"main.tf": `
@@ -6918,7 +6918,7 @@ resource "test_resource" "res" {
 // TestContext2Apply_ephemeralInModuleWithExpansion checks that the expansion of the
 // ephemeral resources is not pruned even when there is an ephemeral instance node to
 // be executed.
-// This test has been added when a fix for https://github.com/opentofu/opentofu/issues/3489
+// This test has been added when a fix for https://github.com/draganm/openbrine/issues/3489
 // was provided.
 func TestContext2Apply_ephemeralInModuleWithExpansion(t *testing.T) {
 	cfgs := map[string]map[string]string{

@@ -18,8 +18,8 @@ import (
 	"net/url"
 
 	"github.com/hashicorp/go-retryablehttp"
-	"github.com/opentofu/opentofu/internal/states/remote"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/states/remote"
+	"github.com/draganm/openbrine/internal/states/statemgr"
 )
 
 // httpClient is a remote client that stores data in Consul or HTTP REST.

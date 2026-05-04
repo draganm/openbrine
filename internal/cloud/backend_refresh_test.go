@@ -11,14 +11,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/clistate"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/initwd"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
-	"github.com/opentofu/opentofu/internal/terminal"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/clistate"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/initwd"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/terminal"
 )
 
 func testOperationRefresh(t *testing.T, configDir string) (*backend.Operation, *views.View, func(*testing.T) *terminal.TestOutput) {

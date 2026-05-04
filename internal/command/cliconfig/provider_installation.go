@@ -18,10 +18,10 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/cliconfig/ociauthconfig"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/cliconfig/ociauthconfig"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // ProviderInstallation is the structure of the "provider_installation"
@@ -251,7 +251,7 @@ func decodeProviderInstallationFromConfig(hclFile *hclast.File) ([]*ProviderInst
 				}
 				// NOTE: We want to introduce a retry and a timeout for the oci_mirror block too, but that needs
 				// a different design than the one we have for direct and network_mirror.
-				// Details in: https://github.com/opentofu/opentofu/issues/3392
+				// Details in: https://github.com/draganm/openbrine/issues/3392
 			case "dev_overrides":
 				if len(pi.Methods) > 0 {
 					// We require dev_overrides to appear first if it's present,

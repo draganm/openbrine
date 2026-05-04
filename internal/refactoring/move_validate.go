@@ -12,11 +12,11 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // ValidateMoves tests whether all of the given move statements comply with

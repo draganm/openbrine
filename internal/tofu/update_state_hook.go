@@ -6,8 +6,8 @@
 package tofu
 
 import (
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 // updateState calls the PostStateUpdate hook with the state modification function

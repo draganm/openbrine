@@ -15,11 +15,11 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/didyoumean"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/didyoumean"
+	"github.com/draganm/openbrine/internal/lang"
+	"github.com/draganm/openbrine/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // newStaticScope creates a lang.Scope that's backed by the static view of the module represented by the StaticEvaluator

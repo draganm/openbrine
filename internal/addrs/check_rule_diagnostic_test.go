@@ -10,7 +10,7 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestCheckRuleDiagnosticExtra_WrapsExtra(t *testing.T) {

@@ -28,8 +28,8 @@ import (
 	multierror "github.com/hashicorp/go-multierror"
 	uuid "github.com/hashicorp/go-uuid"
 
-	"github.com/opentofu/opentofu/internal/states/remote"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/states/remote"
+	"github.com/draganm/openbrine/internal/states/statemgr"
 )
 
 // Store the last saved serial in dynamo with this suffix for consistency checks.

@@ -11,13 +11,13 @@ import (
 	"testing"
 
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/workdir"
 	"github.com/opentofu/svchost"
 	"github.com/opentofu/svchost/disco"
 	"github.com/opentofu/svchost/svcauth"
 
-	"github.com/opentofu/opentofu/internal/command/cliconfig"
-	"github.com/opentofu/opentofu/internal/command/cliconfig/svcauthconfig"
+	"github.com/draganm/openbrine/internal/command/cliconfig"
+	"github.com/draganm/openbrine/internal/command/cliconfig/svcauthconfig"
 )
 
 func TestLogout(t *testing.T) {

@@ -8,7 +8,7 @@ package eval
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/lang/exprs"
 )
 
 // InputValuesForTesting returns input variable definitions based on a constant

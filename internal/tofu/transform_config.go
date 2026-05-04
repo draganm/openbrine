@@ -9,9 +9,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
 )
 
 // ConfigTransformer is a GraphTransformer that adds all the resources

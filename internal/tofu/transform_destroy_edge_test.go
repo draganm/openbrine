@@ -13,10 +13,10 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 func TestDestroyEdgeTransformer_basic(t *testing.T) {

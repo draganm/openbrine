@@ -14,14 +14,14 @@ import (
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/communicator/shared"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/communicator/shared"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/lang"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // traceNameValidateResource is a standardized trace span name we use for the

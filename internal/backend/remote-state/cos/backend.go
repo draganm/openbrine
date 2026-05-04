@@ -15,9 +15,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/legacy/helper/schema"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/legacy/helper/schema"
 	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common"
 	"github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/profile"
 	sts "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts/v20180813"

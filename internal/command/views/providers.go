@@ -11,10 +11,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/tfdiags"
 	"github.com/xlab/treeprint"
 )
 

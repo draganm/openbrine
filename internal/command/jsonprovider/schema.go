@@ -6,7 +6,7 @@
 package jsonprovider
 
 import (
-	"github.com/opentofu/opentofu/internal/providers"
+	"github.com/draganm/openbrine/internal/providers"
 )
 
 type Schema struct {

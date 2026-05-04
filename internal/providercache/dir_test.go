@@ -11,8 +11,8 @@ import (
 	"github.com/apparentlymart/go-versions/versions"
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/getproviders"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/getproviders"
 )
 
 func TestDirReading(t *testing.T) {

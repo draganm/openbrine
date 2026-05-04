@@ -11,11 +11,11 @@ import (
 
 	"github.com/apparentlymart/go-workgraph/workgraph"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/configgraph"
-	"github.com/opentofu/opentofu/internal/lang/exprs"
-	"github.com/opentofu/opentofu/internal/lang/grapheval"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/configgraph"
+	"github.com/draganm/openbrine/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/lang/grapheval"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // CompiledModuleInstance is the interface implemented by the top-level object

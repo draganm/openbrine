@@ -10,11 +10,11 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/plugins"
-	"github.com/opentofu/opentofu/internal/lang/eval"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/plugins"
+	"github.com/draganm/openbrine/internal/lang/eval"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // planContext is our shared state for the various parts of a single call

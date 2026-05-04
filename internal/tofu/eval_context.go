@@ -11,17 +11,17 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/checks"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/plugins"
-	"github.com/opentofu/opentofu/internal/refactoring"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/checks"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/lang"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/plugins"
+	"github.com/draganm/openbrine/internal/refactoring"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // EvalContext is the interface that is given to eval nodes to execute.

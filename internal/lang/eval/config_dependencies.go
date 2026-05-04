@@ -8,10 +8,10 @@ package eval
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/lang/exprs"
-	"github.com/opentofu/opentofu/internal/lang/grapheval"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/lang/grapheval"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type FindDependenciesGlue interface {

@@ -15,7 +15,7 @@ import (
 	"github.com/apparentlymart/go-workgraph/workgraph"
 	hcl "github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // DiagnosticsForWorkgraphError transforms an error returned by a call to

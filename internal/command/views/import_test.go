@@ -10,10 +10,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 func TestImportViews(t *testing.T) {

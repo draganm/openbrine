@@ -23,9 +23,9 @@ import (
 	"github.com/opentofu/svchost/svcauth"
 	"golang.org/x/net/idna"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/httpclient"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/httpclient"
+	"github.com/draganm/openbrine/version"
 )
 
 // HTTPMirrorSource is a source that reads provider metadata from a provider

@@ -16,11 +16,11 @@ import (
 	"strings"
 
 	"github.com/mitchellh/go-linereader"
-	"github.com/opentofu/opentofu/internal/communicator"
-	"github.com/opentofu/opentofu/internal/communicator/remote"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/provisioners"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/communicator"
+	"github.com/draganm/openbrine/internal/communicator/remote"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/provisioners"
+	"github.com/draganm/openbrine/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

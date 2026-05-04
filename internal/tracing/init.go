@@ -29,7 +29,7 @@ import (
 	// so we will typically need to update this each time we upgrade
 	// the module "go.opentelemetry.io/otel/sdk".
 
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
 )
 
 /*

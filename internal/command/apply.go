@@ -10,12 +10,12 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/plans/planfile"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/plans/planfile"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // ApplyCommand is a Command implementation that applies a OpenTofu

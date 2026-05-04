@@ -12,12 +12,12 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/encryption"
-	statespkg "github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/remote"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/encryption"
+	statespkg "github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/remote"
 
-	_ "github.com/opentofu/opentofu/internal/logging"
+	_ "github.com/draganm/openbrine/internal/logging"
 )
 
 func TestMain(m *testing.M) {

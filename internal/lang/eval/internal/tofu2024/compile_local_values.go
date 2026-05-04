@@ -8,10 +8,10 @@ package tofu2024
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/configgraph"
-	"github.com/opentofu/opentofu/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/configgraph"
+	"github.com/draganm/openbrine/internal/lang/exprs"
 )
 
 func compileModuleInstanceLocalValues(_ context.Context, configs map[string]*configs.Local, declScope exprs.Scope, moduleInstAddr addrs.ModuleInstance) map[addrs.LocalValue]*configgraph.LocalValue {

@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/format"
-	"github.com/opentofu/opentofu/internal/command/jsonentities"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/format"
+	"github.com/draganm/openbrine/internal/command/jsonentities"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // The Validate is used for the validate command.

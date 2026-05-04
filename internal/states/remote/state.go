@@ -14,12 +14,12 @@ import (
 
 	uuid "github.com/hashicorp/go-uuid"
 
-	"github.com/opentofu/opentofu/internal/backend/local"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/backend/local"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 // State implements the State interfaces in the state package to handle

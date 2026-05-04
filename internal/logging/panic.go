@@ -26,7 +26,7 @@ Please report the crash with OpenTofu[1] so that we can fix this.
 When reporting bugs, please include your OpenTofu version, the stack trace
 shown below, and any additional information which may help replicate the issue.
 
-[1]: https://github.com/opentofu/opentofu/issues
+[1]: https://github.com/draganm/openbrine/issues
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!! OPENTOFU CRASH !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

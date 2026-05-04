@@ -9,9 +9,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 // OrphanResourceInstanceTransformer is a GraphTransformer that adds orphaned

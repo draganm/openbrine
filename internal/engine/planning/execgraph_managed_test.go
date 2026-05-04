@@ -12,10 +12,10 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/internal/exec"
-	"github.com/opentofu/opentofu/internal/engine/internal/execgraph"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/internal/exec"
+	"github.com/draganm/openbrine/internal/engine/internal/execgraph"
+	"github.com/draganm/openbrine/internal/plans"
 )
 
 // TestExecGraphBuilder_ManagedResourceInstanceSubgraph is a unit test for

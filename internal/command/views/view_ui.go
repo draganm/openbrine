@@ -10,7 +10,7 @@ import (
 	"regexp"
 
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/arguments"
 )
 
 var ErrorInputDisabled = fmt.Errorf("in this view cannot ask user input")
@@ -75,7 +75,7 @@ func (u *ViewUiHuman) Error(message string) {
 }
 
 func (u *ViewUiHuman) Warn(message string) {
-	// Warning messages are meant to go to stdout as pointed out here: https://github.com/opentofu/opentofu/commit/0c3bb316ea56aacf5108883d1a269a53744fdd43
+	// Warning messages are meant to go to stdout as pointed out here: https://github.com/draganm/openbrine/commit/0c3bb316ea56aacf5108883d1a269a53744fdd43
 	_, _ = u.view.streams.Println(u.colorize(message, u.warnColor))
 }
 

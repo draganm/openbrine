@@ -6,7 +6,7 @@
 package arguments
 
 import (
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // Console represents the command-line arguments for the console command.

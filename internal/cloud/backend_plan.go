@@ -23,13 +23,13 @@ import (
 	tfe "github.com/hashicorp/go-tfe"
 	version "github.com/hashicorp/go-version"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/cloud/cloudplan"
-	"github.com/opentofu/opentofu/internal/command/jsonformat"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/genconfig"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/cloud/cloudplan"
+	"github.com/draganm/openbrine/internal/command/jsonformat"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/genconfig"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 var planConfigurationVersionsPollInterval = 500 * time.Millisecond

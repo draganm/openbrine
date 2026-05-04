@@ -13,13 +13,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/workdir"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/copy"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/copy"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestImport(t *testing.T) {

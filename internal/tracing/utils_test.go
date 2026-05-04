@@ -13,12 +13,12 @@ func TestExtractImportPath(t *testing.T) {
 		expected string
 	}{
 		{
-			fullName: "github.com/opentofu/opentofu/internal/getproviders.(*registryClient).Get",
-			expected: "github.com/opentofu/opentofu/internal/getproviders",
+			fullName: "github.com/draganm/openbrine/internal/getproviders.(*registryClient).Get",
+			expected: "github.com/draganm/openbrine/internal/getproviders",
 		},
 		{
-			fullName: "github.com/opentofu/opentofu/pkg/module.Function",
-			expected: "github.com/opentofu/opentofu/pkg/module",
+			fullName: "github.com/draganm/openbrine/pkg/module.Function",
+			expected: "github.com/draganm/openbrine/pkg/module",
 		},
 		{
 			fullName: "main.main",

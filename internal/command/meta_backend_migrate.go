@@ -15,15 +15,15 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/backend/remote"
-	"github.com/opentofu/opentofu/internal/cloud"
-	"github.com/opentofu/opentofu/internal/command/clistate"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/backend/remote"
+	"github.com/draganm/openbrine/internal/cloud"
+	"github.com/draganm/openbrine/internal/command/clistate"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 type backendMigrateOpts struct {

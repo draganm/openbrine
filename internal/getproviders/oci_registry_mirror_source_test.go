@@ -26,7 +26,7 @@ import (
 	orasErrors "oras.land/oras-go/v2/errdef"
 	orasRegistryErrors "oras.land/oras-go/v2/registry/remote/errcode"
 
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 func TestOCIRegistryMirrorSource(t *testing.T) {

@@ -6,15 +6,15 @@
 package differ
 
 import (
-	"github.com/opentofu/opentofu/internal/command/jsonformat/computed/renderers"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/structured"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/command/jsonformat/computed/renderers"
+	"github.com/draganm/openbrine/internal/command/jsonformat/structured"
+	"github.com/draganm/openbrine/internal/plans"
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/opentofu/opentofu/internal/command/jsonformat/computed"
+	"github.com/draganm/openbrine/internal/command/jsonformat/computed"
 
-	"github.com/opentofu/opentofu/internal/command/jsonprovider"
+	"github.com/draganm/openbrine/internal/command/jsonprovider"
 )
 
 // ComputeDiffForAttribute generates the diff for the change.

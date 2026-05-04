@@ -8,9 +8,9 @@ package eval
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/evalglue"
-	"github.com/opentofu/opentofu/internal/lang/grapheval"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/evalglue"
+	"github.com/draganm/openbrine/internal/lang/grapheval"
 )
 
 // A PlanningOracle provides information from the configuration that is needed

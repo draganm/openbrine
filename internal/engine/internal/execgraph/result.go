@@ -8,9 +8,9 @@ package execgraph
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/internal/exec"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/internal/exec"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 // ResultRef represents a result of type T that will be produced by

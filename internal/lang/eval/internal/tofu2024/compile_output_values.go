@@ -11,10 +11,10 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/configgraph"
-	"github.com/opentofu/opentofu/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/configgraph"
+	"github.com/draganm/openbrine/internal/lang/exprs"
 )
 
 func compileModuleInstanceOutputValues(_ context.Context, configs map[string]*configs.Output, declScope exprs.Scope, moduleInstAddr addrs.ModuleInstance) map[addrs.OutputValue]*configgraph.OutputValue {
@@ -33,7 +33,7 @@ func compileModuleInstanceOutputValues(_ context.Context, configs map[string]*co
 			// for an output value, so these are always the most liberal
 			// possible constraint. Making these customizable could be part
 			// of a solution to:
-			//     https://github.com/opentofu/opentofu/issues/2831
+			//     https://github.com/draganm/openbrine/issues/2831
 			TargetType:     cty.DynamicPseudoType,
 			TargetDefaults: nil,
 

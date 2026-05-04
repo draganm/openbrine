@@ -10,8 +10,8 @@ import (
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-	"github.com/opentofu/opentofu/internal/httpclient"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/httpclient"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type WorkloadIdentityAuthConfig struct {

@@ -13,11 +13,11 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/configgraph"
-	"github.com/opentofu/opentofu/internal/lang/exprs"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/configgraph"
+	"github.com/draganm/openbrine/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // The symbols in this file deal with the weird special cases that the current

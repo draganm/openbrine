@@ -10,11 +10,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/backend/remote-state/inmem"
-	"github.com/opentofu/opentofu/internal/command/workdir"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/backend/remote-state/inmem"
+	"github.com/draganm/openbrine/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 func TestStatePush_empty(t *testing.T) {

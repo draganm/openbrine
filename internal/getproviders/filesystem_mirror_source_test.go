@@ -15,7 +15,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/opentofu/svchost"
 
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 func TestFilesystemMirrorSourceAllAvailablePackages(t *testing.T) {

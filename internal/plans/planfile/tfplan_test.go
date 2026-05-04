@@ -13,14 +13,14 @@ import (
 	"github.com/zclconf/go-cty-debug/ctydebug"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/checks"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/lang/globalref"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/checks"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/lang/globalref"
+	"github.com/draganm/openbrine/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 func TestTFPlanRoundTrip(t *testing.T) {

@@ -19,8 +19,8 @@ import (
 	"github.com/hashicorp/hcl"
 	hclast "github.com/hashicorp/hcl/hcl/ast"
 
-	"github.com/opentofu/opentofu/internal/command/cliconfig/ociauthconfig"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/cliconfig/ociauthconfig"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // OCICredentialsPolicy returns an object that encapsulates the operator's configured
@@ -756,7 +756,7 @@ func trueCount(flags ...bool) int {
 //
 // This function is a fun old helper cribbed from a much older version before
 // HCL 2, where the main language was also implemented using HCL 1:
-// https://github.com/opentofu/opentofu/blob/e0fd3ddd704b230897723a7ca251f36b71c2b67a/config/loader_hcl.go#L1215-L1237
+// https://github.com/draganm/openbrine/blob/e0fd3ddd704b230897723a7ca251f36b71c2b67a/config/loader_hcl.go#L1215-L1237
 func unwrapHCLObjectKeysFromJSON(item *hclast.ObjectItem, depth int) {
 	if len(item.Keys) > depth && item.Keys[0].Token.JSON {
 		for len(item.Keys) > depth {

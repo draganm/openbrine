@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/jsonentities"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/jsonentities"
+	"github.com/draganm/openbrine/internal/plans"
 )
 
 type Hook interface {

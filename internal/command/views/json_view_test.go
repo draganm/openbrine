@@ -14,13 +14,13 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/jsonentities"
-	viewsjson "github.com/opentofu/opentofu/internal/command/views/json"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/terminal"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/jsonentities"
+	viewsjson "github.com/draganm/openbrine/internal/command/views/json"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/terminal"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	tfversion "github.com/draganm/openbrine/version"
 )
 
 // Calling NewJSONView should also always output a version message, which is a

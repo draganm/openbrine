@@ -10,10 +10,10 @@ import (
 	"strings"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/lang/exprs"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/lang/exprs"
+	"github.com/draganm/openbrine/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/function"
 )
@@ -33,7 +33,7 @@ import (
 // use different surface language design details.
 //
 // There's some related context about this in:
-//    https://github.com/opentofu/opentofu/pull/2262
+//    https://github.com/draganm/openbrine/pull/2262
 
 type moduleInstanceScope struct {
 	inst          *CompiledModuleInstance

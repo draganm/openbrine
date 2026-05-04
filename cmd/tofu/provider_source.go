@@ -16,10 +16,10 @@ import (
 	"github.com/apparentlymart/go-userdirs/userdirs"
 	"github.com/opentofu/svchost/disco"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/cliconfig"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/cliconfig"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // providerSource constructs a provider source based on a combination of the

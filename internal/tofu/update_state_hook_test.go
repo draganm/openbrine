@@ -10,8 +10,8 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 func TestUpdateStateHook(t *testing.T) {

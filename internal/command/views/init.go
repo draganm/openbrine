@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/initwd"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/initwd"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type Init interface {

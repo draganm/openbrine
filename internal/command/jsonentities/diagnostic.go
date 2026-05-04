@@ -17,10 +17,10 @@ import (
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/command/jsonplan"
-	"github.com/opentofu/opentofu/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/command/jsonplan"
+	"github.com/draganm/openbrine/internal/lang/marks"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // These severities map to the tfdiags.Severity values, plus an explicit
@@ -348,7 +348,7 @@ func newDiagnosticSnippet(snippetRange, highlightRange *tfdiags.SourceRange, sou
 // newDiagnosticDifference covers expressions in the binary
 // expression operation format of x == y.
 // It's used to create a pretty and descriptive output for the test suite assertions.
-// For context: https://github.com/opentofu/opentofu/issues/2545
+// For context: https://github.com/draganm/openbrine/issues/2545
 func newDiagnosticDifference(diag tfdiags.Diagnostic) *jsonplan.Change {
 	fromExpr := diag.FromExpr()
 	if fromExpr == nil {

@@ -11,9 +11,9 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/engine/internal/exec"
-	"github.com/opentofu/opentofu/internal/lang/eval"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/engine/internal/exec"
+	"github.com/draganm/openbrine/internal/lang/eval"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // DataRead implements [exec.Operations].

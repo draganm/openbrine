@@ -7,8 +7,8 @@ package unencrypted
 
 import (
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/internal/encryption/method"
 )
 
 func New() method.Descriptor {

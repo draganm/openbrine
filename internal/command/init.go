@@ -15,28 +15,28 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/flags"
+	"github.com/draganm/openbrine/internal/command/flags"
 	"github.com/opentofu/svchost"
 	"github.com/posener/complete"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/backend"
-	backendInit "github.com/opentofu/opentofu/internal/backend/init"
-	"github.com/opentofu/opentofu/internal/cloud"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/providercache"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tofumigrate"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/backend"
+	backendInit "github.com/draganm/openbrine/internal/backend/init"
+	"github.com/draganm/openbrine/internal/cloud"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/providercache"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tofumigrate"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
+	tfversion "github.com/draganm/openbrine/version"
 )
 
 // InitCommand is a Command implementation that takes a Terraform
@@ -1152,7 +1152,7 @@ func (c *InitCommand) configureBackendFlags(args *arguments.Backend) {
 	c.migrateState = args.MigrateState
 	c.Meta.ignoreRemoteVersion = args.IgnoreRemoteVersion
 	// TODO meta-refactor: unify these 2 args attributes with the state flags in arguments.extendedFlagSet
-	//  https://github.com/opentofu/opentofu/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/internal/command/arguments/extended.go#L320-L321
+	//  https://github.com/draganm/openbrine/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/internal/command/arguments/extended.go#L320-L321
 	c.Meta.stateLock = args.StateLock
 	c.Meta.stateLockTimeout = args.StateLockTimeout
 }

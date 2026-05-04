@@ -13,18 +13,18 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/mitchellh/colorstring"
 
-	"github.com/opentofu/opentofu/internal/command/jsonprovider"
-	"github.com/opentofu/opentofu/internal/command/jsonstate"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/terminal"
+	"github.com/draganm/openbrine/internal/command/jsonprovider"
+	"github.com/draganm/openbrine/internal/command/jsonstate"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/terminal"
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 func TestState(t *testing.T) {

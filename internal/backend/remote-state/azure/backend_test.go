@@ -19,11 +19,11 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/container"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/backend/remote-state/azure/auth"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/httpclient"
-	"github.com/opentofu/opentofu/internal/legacy/helper/acctest"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/backend/remote-state/azure/auth"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/httpclient"
+	"github.com/draganm/openbrine/internal/legacy/helper/acctest"
 )
 
 func TestBackend_impl(t *testing.T) {

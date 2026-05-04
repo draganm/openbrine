@@ -12,9 +12,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/encryption/compliancetest"
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/compliancetest"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/internal/encryption/method"
 	"github.com/zclconf/go-cty/cty"
 )
 

@@ -10,9 +10,9 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
-	"github.com/opentofu/opentofu/internal/encryption/method"
-	"github.com/opentofu/opentofu/internal/encryption/method/aesgcm"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/method/aesgcm"
 	"github.com/zclconf/go-cty/cty"
 )
 

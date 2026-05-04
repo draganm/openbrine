@@ -22,12 +22,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/legacy/hcl2shim"
-	mockproto "github.com/opentofu/opentofu/internal/plugin6/mock_proto"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	proto "github.com/opentofu/opentofu/internal/tfplugin6"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/legacy/hcl2shim"
+	mockproto "github.com/draganm/openbrine/internal/plugin6/mock_proto"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	proto "github.com/draganm/openbrine/internal/tfplugin6"
 )
 
 var _ providers.Interface = (*GRPCProvider)(nil)

@@ -15,9 +15,9 @@ import (
 	"os"
 
 	"github.com/mitchellh/copystructure"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/plans"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/plans"
+	tfversion "github.com/draganm/openbrine/version"
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 )

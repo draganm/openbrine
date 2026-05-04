@@ -10,13 +10,13 @@ import (
 	"log"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/checks"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/refactoring"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/checks"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/refactoring"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // graphWalkOpts captures some transient values we use (and possibly mutate)

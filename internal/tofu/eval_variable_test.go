@@ -12,14 +12,14 @@ import (
 	"testing"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/configs"
+	"github.com/draganm/openbrine/internal/configs"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/checks"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/checks"
+	"github.com/draganm/openbrine/internal/lang"
+	"github.com/draganm/openbrine/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestPrepareFinalInputVariableValue(t *testing.T) {
@@ -1457,7 +1457,7 @@ func TestEvalVariableValidations_sensitiveValueDiagnostics(t *testing.T) {
 	// into diagnostic messages with the sensitive mark intact, so that
 	// the values won't be disclosed in the UI.
 	// Earlier versions handled this incorrectly:
-	//    https://github.com/opentofu/opentofu/issues/2219
+	//    https://github.com/draganm/openbrine/issues/2219
 
 	cfgSrc := `
 		variable "foo" {

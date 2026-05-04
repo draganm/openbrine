@@ -9,9 +9,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/opentofu/opentofu/internal/plugin/convert"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tfplugin5"
+	"github.com/draganm/openbrine/internal/plugin/convert"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tfplugin5"
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"github.com/zclconf/go-cty/cty/msgpack"

@@ -8,7 +8,7 @@ package configgraph
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

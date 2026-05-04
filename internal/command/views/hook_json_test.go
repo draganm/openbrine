@@ -13,11 +13,11 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/terminal"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/terminal"
+	"github.com/draganm/openbrine/internal/tofu"
 	"github.com/zclconf/go-cty/cty"
 )
 

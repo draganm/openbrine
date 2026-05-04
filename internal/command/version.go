@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/getproviders"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/getproviders"
 )
 
 // VersionCommand is a Command implementation prints the version.

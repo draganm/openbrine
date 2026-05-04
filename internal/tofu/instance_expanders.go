@@ -17,7 +17,7 @@ package tofu
 // to be retained during pruning.
 // nodeExpandCheck is a good example of a node supposed to be implementing this interface, but due to the aforementioned
 // limitation in the current implementation is not.
-// More details in this issue https://github.com/opentofu/opentofu/issues/2808
+// More details in this issue https://github.com/draganm/openbrine/issues/2808
 type graphNodeRetainedByPruneUnusedNodesTransformer interface {
 	retainDuringUnusedPruning()
 }

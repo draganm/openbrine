@@ -6,7 +6,7 @@
 package funcs
 
 import (
-	"github.com/opentofu/opentofu/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/function"
 )
@@ -48,7 +48,7 @@ var EphemeralAsNullFunc = function.New(&function.Spec{
 				//
 				// Therefore we must report that we can't predict whether an
 				// unknown value will be ephemeral or not. For more information,
-				// refer to https://github.com/opentofu/opentofu/issues/2415
+				// refer to https://github.com/draganm/openbrine/issues/2415
 
 				return cty.UnknownVal(val.Type()).WithMarks(nonEphemeralMarks), nil
 			case val.HasMark(marks.Ephemeral):

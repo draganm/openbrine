@@ -7,8 +7,8 @@ package command
 
 import (
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/views"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/views"
 )
 
 // MetadataFunctionsCommand is a Command implementation that prints out information

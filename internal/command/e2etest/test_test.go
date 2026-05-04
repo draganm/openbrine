@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/e2e"
+	"github.com/draganm/openbrine/internal/e2e"
 )
 
 func TestMultipleRunBlocks(t *testing.T) {
@@ -82,7 +82,7 @@ func TestMocksAndOverrides(t *testing.T) {
 }
 
 // TestMockProviderComputedBlockCleanup ensures we don't regress
-// a fix for this issue https://github.com/opentofu/opentofu/issues/3644
+// a fix for this issue https://github.com/draganm/openbrine/issues/3644
 //
 // The bug occurs when:
 // 1. A resource has lifecycle { ignore_changes = [block] } on a BLOCK (not a simple attribute)
@@ -110,7 +110,7 @@ func TestMockProviderComputedBlockCleanup(t *testing.T) {
 	if err != nil {
 		if strings.Contains(stdout, "Config value can not be specified for computed field") {
 			t.Errorf("Bug reproduced: mock provider fails with computed field error.\n"+
-				"This is the bug from https://github.com/opentofu/opentofu/issues/3644\n"+
+				"This is the bug from https://github.com/draganm/openbrine/issues/3644\n"+
 				"stdout:\n%s", stdout)
 			return
 		}

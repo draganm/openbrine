@@ -30,7 +30,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/dag"
+	"github.com/draganm/openbrine/internal/dag"
 )
 
 func main() {

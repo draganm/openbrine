@@ -12,12 +12,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/workdir"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/backend/local"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/backend/local"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 func TestMetaInputMode(t *testing.T) {

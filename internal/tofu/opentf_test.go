@@ -18,17 +18,17 @@ import (
 	"github.com/davecgh/go-spew/spew"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configload"
-	"github.com/opentofu/opentofu/internal/initwd"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/provisioners"
-	"github.com/opentofu/opentofu/internal/registry"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configload"
+	"github.com/draganm/openbrine/internal/initwd"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/provisioners"
+	"github.com/draganm/openbrine/internal/registry"
+	"github.com/draganm/openbrine/internal/states"
 
-	_ "github.com/opentofu/opentofu/internal/logging"
+	_ "github.com/draganm/openbrine/internal/logging"
 )
 
 // This is the directory where our test fixtures are.

@@ -8,9 +8,9 @@ package tofu
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
 )
 
 // RootVariableTransformer is a GraphTransformer that adds all the root

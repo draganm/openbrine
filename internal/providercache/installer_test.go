@@ -25,9 +25,9 @@ import (
 	"github.com/opentofu/svchost"
 	"github.com/opentofu/svchost/disco"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/depsfile"
-	"github.com/opentofu/opentofu/internal/getproviders"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/depsfile"
+	"github.com/draganm/openbrine/internal/getproviders"
 )
 
 func TestEnsureProviderVersions(t *testing.T) {

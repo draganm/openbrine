@@ -6,7 +6,7 @@
 package funcs
 
 import (
-	"github.com/opentofu/opentofu/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/function"
 )
@@ -91,7 +91,7 @@ var IsSensitiveFunc = function.New(&function.Spec{
 			// Therefore we must report that we can't predict whether an
 			// unknown value will be sensitive or not. For more information,
 			// refer to:
-			//    https://github.com/opentofu/opentofu/issues/2415
+			//    https://github.com/draganm/openbrine/issues/2415
 			return cty.UnknownVal(cty.Bool), nil
 		}
 		return cty.BoolVal(args[0].HasMark(marks.Sensitive)), nil

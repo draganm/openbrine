@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/plugins"
-	"github.com/opentofu/opentofu/internal/providers"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/plugins"
+	"github.com/draganm/openbrine/internal/providers"
 )
 
 // TestResourceTypeConfig checks that ResourceTypeConfig works correctly in all possible combinations:

@@ -27,7 +27,7 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"golang.org/x/crypto/ssh"
 
-	"github.com/opentofu/opentofu/internal/communicator/remote"
+	"github.com/draganm/openbrine/internal/communicator/remote"
 )
 
 // private key for mock server
@@ -190,7 +190,7 @@ func TestPowershellQuote(t *testing.T) {
 func TestNew_PublicKeyAsCertificate(t *testing.T) {
 	// This test ensures that we correctly identify and reject a public key
 	// in the "certificate" argument, which historically caused a panic
-	// as described in https://github.com/opentofu/opentofu/issues/3369 .
+	// as described in https://github.com/draganm/openbrine/issues/3369 .
 
 	v := cty.ObjectVal(map[string]cty.Value{
 		"type":    cty.StringVal("ssh"),

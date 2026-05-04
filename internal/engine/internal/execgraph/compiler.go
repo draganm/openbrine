@@ -13,10 +13,10 @@ import (
 	"github.com/apparentlymart/go-workgraph/workgraph"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/internal/exec"
-	"github.com/opentofu/opentofu/internal/lang/grapheval"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/internal/exec"
+	"github.com/draganm/openbrine/internal/lang/grapheval"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // Compile produces a compiled version of the graph which will, once executed,

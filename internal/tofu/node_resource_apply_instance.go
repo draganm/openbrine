@@ -10,16 +10,16 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/plans/objchange"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/plans/objchange"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
 )
 
 // NodeApplyableResourceInstance represents a resource instance that is

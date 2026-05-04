@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 func TestFindEffectiveReplaceOrders(t *testing.T) {

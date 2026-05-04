@@ -12,12 +12,12 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/depsfile"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/lang/evalchecks"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/depsfile"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/lang/evalchecks"
+	"github.com/draganm/openbrine/internal/tfdiags"
 	"github.com/zclconf/go-cty/cty"
 )
 

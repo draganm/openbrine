@@ -18,10 +18,10 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/e2e"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/e2e"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/plans"
 	"github.com/zclconf/go-cty/cty"
 )
 
@@ -461,7 +461,7 @@ Changes to Outputs:
 					`simple_resource.test_res (local-exec): visible test value`,
 					`simple_resource.test_res (local-exec): \"visible test value\"`,
 				}, true},
-				// https://github.com/opentofu/opentofu/pull/3931#discussion_r2983258136
+				// https://github.com/draganm/openbrine/pull/3931#discussion_r2983258136
 				// Ephemeral values can be shown on local provisioners, they do not need to be hidden
 				outputCheckContains{[]string{
 					`simple_resource.test_res (local-exec): Executing: ["/bin/sh" "-c" "echo \"visible plan_val-ephemeral_val-with-renew\""]`,
@@ -715,7 +715,7 @@ func buildSimpleProvider(t *testing.T, version string, workdir string, buildOutN
 		providerBinFileName = buildOutName
 	}
 	providerBuildOutDir := filepath.Join(workdir, fmt.Sprintf("terraform-provider-%s", providerBinFileName))
-	providerTmpBinPath := e2e.GoBuild(fmt.Sprintf("github.com/opentofu/opentofu/internal/%s/main", implPkgName), providerBuildOutDir)
+	providerTmpBinPath := e2e.GoBuild(fmt.Sprintf("github.com/draganm/openbrine/internal/%s/main", implPkgName), providerBuildOutDir)
 
 	extension := ""
 	if runtime.GOOS == "windows" {

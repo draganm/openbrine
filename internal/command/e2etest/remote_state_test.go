@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/e2e"
+	"github.com/draganm/openbrine/internal/e2e"
 )
 
 func TestOpenTofuProviderRead(t *testing.T) {

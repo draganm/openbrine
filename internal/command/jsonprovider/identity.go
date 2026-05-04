@@ -8,7 +8,7 @@ package jsonprovider
 import (
 	"encoding/json"
 
-	"github.com/opentofu/opentofu/internal/providers"
+	"github.com/draganm/openbrine/internal/providers"
 )
 
 type ResourceIdentitySchema struct {

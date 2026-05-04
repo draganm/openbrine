@@ -8,7 +8,7 @@ package states
 import (
 	"maps"
 
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 	"github.com/zclconf/go-cty/cty"
 )
 

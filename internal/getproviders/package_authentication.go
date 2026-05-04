@@ -20,8 +20,8 @@ import (
 
 	"github.com/ProtonMail/go-crypto/openpgp"
 	openpgpErrors "github.com/ProtonMail/go-crypto/openpgp/errors"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/collections"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/collections"
 )
 
 type packageAuthenticationResult int
@@ -542,7 +542,7 @@ var ErrUnknownIssuer = fmt.Errorf("authentication signature from unknown issuer"
 // which it does not currently know a signing key. For more information,
 // refer to:
 //
-//	https://github.com/opentofu/opentofu/issues/266
+//	https://github.com/draganm/openbrine/issues/266
 //
 // The result of this function also determines whether signature
 // verification is required in order for a particular hash to be tracked
@@ -601,7 +601,7 @@ func (s signatureAuthentication) AuthenticatePackage(location PackageLocation) (
 	} else {
 		// As this is a temporary measure, we will log a warning to the user making it very clear what is happening
 		// and why. This will be removed in a future release.
-		log.Printf("[WARN] Skipping GPG validation of provider package %s as no keys were provided by the registry. See https://github.com/opentofu/opentofu/pull/309 for more information.", location)
+		log.Printf("[WARN] Skipping GPG validation of provider package %s as no keys were provided by the registry. See https://github.com/draganm/openbrine/pull/309 for more information.", location)
 	}
 
 	// For each of the hashes mentioned in the document that was signed we'll announce that

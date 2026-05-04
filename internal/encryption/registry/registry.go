@@ -6,8 +6,8 @@
 package registry
 
 import (
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
-	"github.com/opentofu/opentofu/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/method"
 )
 
 // Registry collects all encryption methods and key providers

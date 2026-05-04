@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 const encryptionConfigEnvName = "TF_ENCRYPTION"

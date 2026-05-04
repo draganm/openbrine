@@ -9,9 +9,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
-	"github.com/opentofu/opentofu/internal/terminal"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/terminal"
 )
 
 func TestUnlock(t *testing.T) {
@@ -31,7 +31,7 @@ func TestUnlock(t *testing.T) {
 
 // TestUnlockWithCancelledContext verifies that Unlock succeeds even when the
 // locker's context has been cancelled (e.g., due to SIGINT during apply).
-// This is a regression test for https://github.com/opentofu/opentofu/issues/3624
+// This is a regression test for https://github.com/draganm/openbrine/issues/3624
 func TestUnlockWithCancelledContext(t *testing.T) {
 	streams, _ := terminal.StreamsForTesting(t)
 	view := views.NewView(streams)

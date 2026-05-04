@@ -8,8 +8,8 @@ package exec
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/providers"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/providers"
 )
 
 // ProviderInstanceConfig represents a value that can be used to "configure"

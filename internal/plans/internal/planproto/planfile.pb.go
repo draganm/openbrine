@@ -1532,7 +1532,7 @@ const file_planfile_proto_rawDesc = "" +
 	"\x1dDELETE_BECAUSE_NO_MOVE_TARGET\x10\f\x12 \n" +
 	"\x1cDELETE_BECAUSE_ENABLED_FALSE\x10\x0e\x12-\n" +
 	")FORGOT_BECAUSE_LIFECYCLE_DESTROY_IN_STATE\x10\x0f\x12.\n" +
-	"*FORGOT_BECAUSE_LIFECYCLE_DESTROY_IN_CONFIG\x10\x10B@Z>github.com/opentofu/opentofu/internal/plans/internal/planprotob\x06proto3"
+	"*FORGOT_BECAUSE_LIFECYCLE_DESTROY_IN_CONFIG\x10\x10B@Z>github.com/draganm/openbrine/internal/plans/internal/planprotob\x06proto3"
 
 var (
 	file_planfile_proto_rawDescOnce sync.Once

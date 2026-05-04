@@ -22,18 +22,18 @@ import (
 	"github.com/hashicorp/go-plugin"
 	"github.com/mattn/go-shellwords"
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/command/workdir"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/cliconfig"
-	"github.com/opentofu/opentofu/internal/didyoumean"
-	"github.com/opentofu/opentofu/internal/logging"
-	"github.com/opentofu/opentofu/internal/terminal"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/cliconfig"
+	"github.com/draganm/openbrine/internal/didyoumean"
+	"github.com/draganm/openbrine/internal/logging"
+	"github.com/draganm/openbrine/internal/terminal"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/version"
 
-	backendInit "github.com/opentofu/opentofu/internal/backend/init"
+	backendInit "github.com/draganm/openbrine/internal/backend/init"
 )
 
 const (

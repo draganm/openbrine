@@ -8,8 +8,8 @@ package jsonprovider
 import (
 	"encoding/json"
 
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 // FormatVersion represents the version of the json format and will be

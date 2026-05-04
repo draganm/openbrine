@@ -23,11 +23,11 @@ import (
 	"github.com/hashicorp/go-retryablehttp"
 	tfe "github.com/hashicorp/go-tfe"
 	"github.com/hashicorp/jsonapi"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/command/jsonformat"
-	"github.com/opentofu/opentofu/internal/logging"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/command/jsonformat"
+	"github.com/draganm/openbrine/internal/logging"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 var (

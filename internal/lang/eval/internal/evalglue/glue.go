@@ -10,9 +10,9 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/configgraph"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/configgraph"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // Glue is an interface used internally by the lang/eval packages to deal

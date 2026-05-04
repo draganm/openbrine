@@ -9,19 +9,19 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tofu"
 
 	tfe "github.com/hashicorp/go-tfe"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/command/clistate"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/initwd"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
-	"github.com/opentofu/opentofu/internal/terminal"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/command/clistate"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/initwd"
+	"github.com/draganm/openbrine/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/terminal"
 )
 
 func TestRemoteStoredVariableValue(t *testing.T) {

@@ -12,15 +12,15 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/refactoring"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/refactoring"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
 )
 
 // ConcreteResourceInstanceDeposedNodeFunc is a callback type used to convert

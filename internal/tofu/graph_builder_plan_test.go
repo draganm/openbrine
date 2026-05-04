@@ -10,14 +10,14 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/plugins"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/plugins"
+	"github.com/draganm/openbrine/internal/states"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/providers"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/providers"
 )
 
 func TestPlanGraphBuilder_impl(t *testing.T) {

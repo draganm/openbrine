@@ -11,11 +11,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
-	"github.com/opentofu/opentofu/internal/encryption/method"
-	"github.com/opentofu/opentofu/internal/encryption/method/unencrypted"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/method/unencrypted"
 
 	"github.com/hashicorp/hcl/v2"
 )

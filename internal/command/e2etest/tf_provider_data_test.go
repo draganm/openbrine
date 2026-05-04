@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/e2e"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/e2e"
 )
 
 func TestOpenTofuProviderData(t *testing.T) {

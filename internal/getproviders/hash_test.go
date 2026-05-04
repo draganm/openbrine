@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/collections"
+	"github.com/draganm/openbrine/internal/collections"
 )
 
 func TestParseHash(t *testing.T) {

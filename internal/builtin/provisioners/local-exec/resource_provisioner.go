@@ -19,9 +19,9 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/provisioners"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/provisioners"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 const (

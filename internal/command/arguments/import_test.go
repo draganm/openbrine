@@ -12,8 +12,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/opentofu/opentofu/internal/command/flags"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/flags"
+	"github.com/draganm/openbrine/internal/command/workdir"
 )
 
 func TestParseImport_basicValidation(t *testing.T) {

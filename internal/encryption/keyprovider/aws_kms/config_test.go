@@ -19,8 +19,8 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/gohcl"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/opentofu/opentofu/internal/httpclient"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/httpclient"
+	"github.com/draganm/openbrine/version"
 )
 
 func TestConfig_asAWSBase(t *testing.T) {

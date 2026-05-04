@@ -21,16 +21,16 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configload"
-	"github.com/opentofu/opentofu/internal/getmodules"
-	"github.com/opentofu/opentofu/internal/modsdir"
-	"github.com/opentofu/opentofu/internal/registry"
-	"github.com/opentofu/opentofu/internal/registry/response"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configload"
+	"github.com/draganm/openbrine/internal/getmodules"
+	"github.com/draganm/openbrine/internal/modsdir"
+	"github.com/draganm/openbrine/internal/registry"
+	"github.com/draganm/openbrine/internal/registry/response"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
 )
 
 type ModuleInstaller struct {
@@ -619,7 +619,7 @@ func (i *ModuleInstaller) installRegistryModule(ctx context.Context, req *config
 			// to combine a prerelease selection with another constraint will
 			// cause all prerelease versions to be excluded from the selection.
 			// For more information:
-			//     https://github.com/opentofu/opentofu/issues/2117
+			//     https://github.com/draganm/openbrine/issues/2117
 			constraint := req.VersionConstraint.Required.String()
 			acceptableVersions, err := versions.MeetingConstraintsString(constraint)
 			if err != nil {

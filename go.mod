@@ -1,4 +1,4 @@
-module github.com/opentofu/opentofu
+module github.com/draganm/openbrine
 
 go 1.26.2
 

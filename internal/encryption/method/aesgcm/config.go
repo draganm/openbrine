@@ -8,11 +8,11 @@ package aesgcm
 import (
 	"fmt"
 
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
 
-	"github.com/opentofu/opentofu/internal/collections"
+	"github.com/draganm/openbrine/internal/collections"
 
-	"github.com/opentofu/opentofu/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/method"
 )
 
 // validKeyLengths holds the valid key lengths supported by this method.

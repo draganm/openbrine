@@ -15,7 +15,7 @@ import (
 	"testing"
 
 	openbao "github.com/openbao/openbao/api/v2"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/compliancetest"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/compliancetest"
 )
 
 // By default the tests in here behave like unit tests, running against a

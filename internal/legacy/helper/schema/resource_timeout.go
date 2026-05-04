@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/mitchellh/copystructure"
-	"github.com/opentofu/opentofu/internal/legacy/hcl2shim"
-	"github.com/opentofu/opentofu/internal/legacy/tofu"
+	"github.com/draganm/openbrine/internal/legacy/hcl2shim"
+	"github.com/draganm/openbrine/internal/legacy/tofu"
 )
 
 const TimeoutKey = "e2bfb730-ecaa-11e6-8f88-34363bc7c4c0"

@@ -8,8 +8,8 @@ package tofu
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
 )
 
 // LocalTransformer is a GraphTransformer that adds all the local values

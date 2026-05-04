@@ -10,12 +10,12 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/internal/exec"
-	"github.com/opentofu/opentofu/internal/engine/internal/execgraph"
-	"github.com/opentofu/opentofu/internal/lang/eval"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/internal/exec"
+	"github.com/draganm/openbrine/internal/engine/internal/execgraph"
+	"github.com/draganm/openbrine/internal/lang/eval"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 ////////////////////////////////////////////////////////////////////////////////

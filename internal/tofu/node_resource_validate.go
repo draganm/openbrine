@@ -14,17 +14,17 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/communicator/shared"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/didyoumean"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/communicator/shared"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/didyoumean"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/lang"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
 )
 
 // NodeValidatableResource represents a resource that is used for validation
@@ -167,7 +167,7 @@ func (n *NodeValidatableResource) validateProvisioner(ctx context.Context, evalC
 
 		// Now that we have the connection config, we can check if we're using winrm and provide a deprecation warning
 		// Otherwise, we can just exit early and assume validation is complete
-		// See https://github.com/opentofu/opentofu/issues/3406 for more information
+		// See https://github.com/draganm/openbrine/issues/3406 for more information
 		unmarkedConnVal, _ := connVal.UnmarkDeep()
 		typeVal := unmarkedConnVal.GetAttr("type")
 

@@ -6,7 +6,7 @@
 package objchange
 
 import (
-	"github.com/opentofu/opentofu/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/configs/configschema"
 	"github.com/zclconf/go-cty/cty"
 )
 

@@ -14,9 +14,9 @@ import (
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"github.com/zclconf/go-cty/cty/msgpack"
 
-	"github.com/opentofu/opentofu/internal/legacy/hcl2shim"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tracing"
+	"github.com/draganm/openbrine/internal/legacy/hcl2shim"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tracing"
 )
 
 var _ providers.Interface = (*MockProvider)(nil)

@@ -16,12 +16,12 @@ import (
 	version "github.com/hashicorp/go-version"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/backend"
-	backendLocal "github.com/opentofu/opentofu/internal/backend/local"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/backend"
+	backendLocal "github.com/draganm/openbrine/internal/backend/local"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	tfversion "github.com/draganm/openbrine/version"
 )
 
 func TestRemote(t *testing.T) {

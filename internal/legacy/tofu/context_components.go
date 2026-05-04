@@ -8,9 +8,9 @@ package tofu
 import (
 	"fmt"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/provisioners"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/provisioners"
 )
 
 // contextComponentFactory is the interface that Context uses

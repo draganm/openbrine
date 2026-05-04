@@ -9,9 +9,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
 )
 
 // GraphNodeAttachResourceConfig is an interface that must be implemented by nodes

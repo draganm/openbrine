@@ -11,8 +11,8 @@ import (
 
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 
-	"github.com/opentofu/opentofu/internal/command/jsonformat/computed"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/command/jsonformat/computed"
+	"github.com/draganm/openbrine/internal/plans"
 )
 
 // NoWarningsRenderer defines a Warnings function that returns an empty list of

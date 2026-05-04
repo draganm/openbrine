@@ -8,7 +8,7 @@
 package main
 
 import (
-	"github.com/opentofu/opentofu/internal/command/webbrowser"
+	"github.com/draganm/openbrine/internal/command/webbrowser"
 )
 
 func browserLauncherFromEnv() webbrowser.Launcher {

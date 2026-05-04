@@ -8,8 +8,8 @@ package planning
 import (
 	"sync"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/internal/execgraph"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/internal/execgraph"
 )
 
 // execGraphBuilder is a higher-level wrapper around [execgraph.Builder] that

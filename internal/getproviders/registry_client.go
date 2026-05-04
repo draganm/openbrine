@@ -21,10 +21,10 @@ import (
 	"github.com/opentofu/svchost"
 	"github.com/opentofu/svchost/svcauth"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/version"
 )
 
 const (

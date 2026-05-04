@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/getmodules"
+	"github.com/draganm/openbrine/internal/getmodules"
 )
 
 func TestGet(t *testing.T) {

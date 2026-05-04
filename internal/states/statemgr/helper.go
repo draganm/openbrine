@@ -11,10 +11,10 @@ package statemgr
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/tofu"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/tofu"
+	"github.com/draganm/openbrine/version"
 )
 
 // NewStateFile creates a new statefile.File object, with a newly-minted

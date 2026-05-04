@@ -15,11 +15,11 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/experiments"
-	"github.com/opentofu/opentofu/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/experiments"
+	"github.com/draganm/openbrine/internal/lang/marks"
 )
 
 // TestFunctions tests that functions are callable through the functionality

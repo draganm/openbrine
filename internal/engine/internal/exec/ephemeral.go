@@ -8,7 +8,7 @@ package exec
 import (
 	"context"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type OpenEphemeralResourceInstance struct {

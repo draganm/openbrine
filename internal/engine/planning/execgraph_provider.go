@@ -6,9 +6,9 @@
 package planning
 
 import (
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/engine/internal/exec"
-	"github.com/opentofu/opentofu/internal/engine/internal/execgraph"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/engine/internal/exec"
+	"github.com/draganm/openbrine/internal/engine/internal/execgraph"
 )
 
 ////////////////////////////////////////////////////////////////////////////////

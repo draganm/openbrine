@@ -10,10 +10,10 @@ import (
 	"fmt"
 
 	"github.com/apparentlymart/go-versions/versions"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/evalglue"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/evalglue"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // This file contains test helpers for use in other packages. These functions

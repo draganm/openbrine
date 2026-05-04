@@ -10,11 +10,11 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/mitchellh/colorstring"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/format"
-	"github.com/opentofu/opentofu/internal/terminal"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/format"
+	"github.com/draganm/openbrine/internal/terminal"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // View is the base layer for command views, encapsulating a set of I/O

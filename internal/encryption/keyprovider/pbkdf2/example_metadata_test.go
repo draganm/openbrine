@@ -9,9 +9,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/pbkdf2"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/pbkdf2"
 )
 
 var metadataExampleConfiguration = `key_provider "pbkdf2" "foo" {

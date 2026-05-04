@@ -8,7 +8,7 @@ package arguments
 import (
 	"time"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type WorkspaceNew struct {

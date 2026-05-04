@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/encryption/method"
-	"github.com/opentofu/opentofu/internal/encryption/registry"
+	"github.com/draganm/openbrine/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/registry"
 )
 
 func complianceTestMethods(t *testing.T, factory func() registry.Registry) {

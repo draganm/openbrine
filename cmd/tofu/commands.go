@@ -13,18 +13,18 @@ import (
 	"github.com/hashicorp/go-plugin"
 	"github.com/hashicorp/go-retryablehttp"
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/workdir"
 	"github.com/opentofu/svchost"
 	"github.com/opentofu/svchost/disco"
 	"github.com/opentofu/svchost/svcauth"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command"
-	"github.com/opentofu/opentofu/internal/command/cliconfig"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/getmodules"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	pluginDiscovery "github.com/opentofu/opentofu/internal/plugin/discovery"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command"
+	"github.com/draganm/openbrine/internal/command/cliconfig"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/getmodules"
+	"github.com/draganm/openbrine/internal/getproviders"
+	pluginDiscovery "github.com/draganm/openbrine/internal/plugin/discovery"
 )
 
 // runningInAutomationEnvName gives the name of an environment variable that

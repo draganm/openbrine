@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 func TestUIInput_impl(t *testing.T) {

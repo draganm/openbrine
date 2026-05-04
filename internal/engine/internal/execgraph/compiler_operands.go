@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // compilerOperands is a helper for concisely unpacking the operands of an

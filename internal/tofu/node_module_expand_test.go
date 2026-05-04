@@ -9,10 +9,10 @@ import (
 	"testing"
 
 	"github.com/hashicorp/hcl/v2/hcltest"
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/states"
 	"github.com/zclconf/go-cty/cty"
 )
 

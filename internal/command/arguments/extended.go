@@ -15,11 +15,11 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/opentofu/opentofu/internal/command/flags"
+	"github.com/draganm/openbrine/internal/command/flags"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // DefaultParallelism is the limit OpenTofu places on total parallel

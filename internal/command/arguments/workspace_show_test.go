@@ -8,7 +8,7 @@ package arguments
 import (
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestParseWorkspaceShow_viewOptions(t *testing.T) {

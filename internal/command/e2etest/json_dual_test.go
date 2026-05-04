@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/e2e"
+	"github.com/draganm/openbrine/internal/e2e"
 )
 
 func TestJsonIntoStream(t *testing.T) {
@@ -23,7 +23,7 @@ func TestJsonIntoStream(t *testing.T) {
 	// state_lock_acquire/release messages are emitted only when lock acquisition
 	// exceeds a timer threshold. On Windows the two runs have different latencies,
 	// causing one to emit the message and the other not to. Strip these lines so
-	// the comparison is not timing-sensitive. See: https://github.com/opentofu/opentofu/issues/3918
+	// the comparison is not timing-sensitive. See: https://github.com/draganm/openbrine/issues/3918
 	stateLockRe := regexp.MustCompile(`(?m)^[^\n]*"type":"state_lock_(?:acquire|release)"[^\n]*\n?`)
 	// Elapsed durations can be flaky due to timing differences between the two runs, so let's remove those
 	elapsedSecondsRe := regexp.MustCompile(`"elapsed_seconds":\d+`)

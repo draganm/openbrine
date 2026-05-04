@@ -18,7 +18,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/opentofu/opentofu/internal/e2e"
+	"github.com/draganm/openbrine/internal/e2e"
 )
 
 func TestInitProviders(t *testing.T) {
@@ -627,7 +627,7 @@ func escapeStringJSON(v string) string {
 //
 // When OTEL_* variables are set, OpenTelemetry tries to initialize and
 // detects these conflicting schema URLs, causing conflicting schema errors.
-// For more information, see: https://github.com/opentofu/opentofu/pull/3446
+// For more information, see: https://github.com/draganm/openbrine/pull/3446
 func TestTelemetrySchemaConflict(t *testing.T) {
 	t.Parallel()
 

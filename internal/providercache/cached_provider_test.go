@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/getproviders"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/getproviders"
 )
 
 func TestCachedProviderHash(t *testing.T) {

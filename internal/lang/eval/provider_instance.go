@@ -8,7 +8,7 @@ package eval
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 // ProviderInstanceConfig provides the information needed to either instantiate

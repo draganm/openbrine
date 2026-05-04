@@ -13,12 +13,12 @@ import (
 	"strings"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/command/jsonentities"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/computed"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/differ"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/structured"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/structured/attribute_path"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/jsonentities"
+	"github.com/draganm/openbrine/internal/command/jsonformat/computed"
+	"github.com/draganm/openbrine/internal/command/jsonformat/differ"
+	"github.com/draganm/openbrine/internal/command/jsonformat/structured"
+	"github.com/draganm/openbrine/internal/command/jsonformat/structured/attribute_path"
+	"github.com/draganm/openbrine/internal/tfdiags"
 
 	"github.com/mitchellh/colorstring"
 	wordwrap "github.com/mitchellh/go-wordwrap"

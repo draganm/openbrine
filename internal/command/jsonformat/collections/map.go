@@ -6,8 +6,8 @@
 package collections
 
 import (
-	"github.com/opentofu/opentofu/internal/command/jsonformat/computed"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/command/jsonformat/computed"
+	"github.com/draganm/openbrine/internal/plans"
 )
 
 type ProcessKey func(key string) computed.Diff

@@ -6,8 +6,8 @@
 package cloud
 
 import (
-	"github.com/opentofu/opentofu/internal/command/clistate"
-	"github.com/opentofu/opentofu/internal/configs"
+	"github.com/draganm/openbrine/internal/command/clistate"
+	"github.com/draganm/openbrine/internal/configs"
 )
 
 // Most of the logic for migrating into and out of "cloud mode" actually lives

@@ -6,7 +6,7 @@
 package azure_vault
 
 import (
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
 )
 
 func New() keyprovider.Descriptor {

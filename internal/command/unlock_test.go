@@ -10,11 +10,11 @@ import (
 	"testing"
 
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/backend/remote-state/inmem"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/backend/remote-state/inmem"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/workdir"
 
-	legacy "github.com/opentofu/opentofu/internal/legacy/tofu"
+	legacy "github.com/draganm/openbrine/internal/legacy/tofu"
 )
 
 // Since we can't unlock a local state file, just test that calling unlock

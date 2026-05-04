@@ -17,17 +17,17 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configload"
-	"github.com/opentofu/opentofu/internal/copy"
-	"github.com/opentofu/opentofu/internal/getmodules"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configload"
+	"github.com/draganm/openbrine/internal/copy"
+	"github.com/draganm/openbrine/internal/getmodules"
 
 	version "github.com/hashicorp/go-version"
 
-	"github.com/opentofu/opentofu/internal/modsdir"
-	"github.com/opentofu/opentofu/internal/registry"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/modsdir"
+	"github.com/draganm/openbrine/internal/registry"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 const initFromModuleRootCallName = "root"

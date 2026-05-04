@@ -10,9 +10,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/providers"
-	proto "github.com/opentofu/opentofu/internal/tfplugin5"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/providers"
+	proto "github.com/draganm/openbrine/internal/tfplugin5"
 	"github.com/zclconf/go-cty/cty"
 )
 

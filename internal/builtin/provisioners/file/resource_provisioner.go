@@ -15,10 +15,10 @@ import (
 	"github.com/mitchellh/go-homedir"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/communicator"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/provisioners"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/communicator"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/provisioners"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func New() provisioners.Interface {

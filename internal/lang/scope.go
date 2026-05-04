@@ -13,9 +13,9 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty/function"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/experiments"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/experiments"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type ParseRef func(traversal hcl.Traversal) (*addrs.Reference, tfdiags.Diagnostics)

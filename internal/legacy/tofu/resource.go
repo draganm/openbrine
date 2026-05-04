@@ -16,9 +16,9 @@ import (
 	"github.com/mitchellh/reflectwalk"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/legacy/hcl2shim"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/legacy/hcl2shim"
 )
 
 // Resource is a legacy way to identify a particular resource instance.

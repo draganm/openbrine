@@ -8,9 +8,9 @@ package statefile
 import (
 	version "github.com/hashicorp/go-version"
 
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/states"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/states"
+	tfversion "github.com/draganm/openbrine/version"
 )
 
 // File is the in-memory representation of a state file. It includes the state

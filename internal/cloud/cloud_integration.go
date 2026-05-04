@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-tfe"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/command/views"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/command/views"
 )
 
 // IntegrationOutputWriter is an interface used to write output tailored for

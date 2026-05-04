@@ -20,21 +20,21 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configload"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/legacy/hcl2shim"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/plans/planfile"
-	"github.com/opentofu/opentofu/internal/plugins"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/provisioners"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tracing"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configload"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/legacy/hcl2shim"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/plans/planfile"
+	"github.com/draganm/openbrine/internal/plugins"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/provisioners"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tracing"
 )
 
 var (
@@ -177,15 +177,15 @@ func TestContext_contextValuesPropagation(t *testing.T) {
 	assertNoErrors(t, diags)
 
 	probe.ExpectReportsFrom(t,
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).GetProviderSchema",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).ValidateProviderConfig",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).ValidateDataResourceConfig",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).ValidateResourceConfig",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).ConfigureProvider",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).ReadDataSource",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).PlanResourceChange",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).ApplyResourceChange",
-		"github.com/opentofu/opentofu/internal/tofu.(*MockProvider).Close",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).GetProviderSchema",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).ValidateProviderConfig",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).ValidateDataResourceConfig",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).ValidateResourceConfig",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).ConfigureProvider",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).ReadDataSource",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).PlanResourceChange",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).ApplyResourceChange",
+		"github.com/draganm/openbrine/internal/tofu.(*MockProvider).Close",
 	)
 }
 

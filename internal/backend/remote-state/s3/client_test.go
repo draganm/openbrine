@@ -22,11 +22,11 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/s3/types"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/states/remote"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/states/remote"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/states/statemgr"
 )
 
 func TestRemoteClient_impl(t *testing.T) {
@@ -798,7 +798,7 @@ func TestRemoteClient_IsLockingEnabled(t *testing.T) {
 // related to checksums.
 // This test was introduced during upgrading the version of the sdk including a breaking change that could
 // impact the usage of the 3rd party s3 providers.
-// More details in https://github.com/opentofu/opentofu/issues/2570.
+// More details in https://github.com/draganm/openbrine/issues/2570.
 func TestS3ChecksumsHeaders(t *testing.T) {
 	// Configured the aws config the same way it is done for the backend to ensure a similar setup as the actual main logic.
 	_, awsCfg, _ := awsbase.GetAwsConfig(context.Background(), &awsbase.Config{Region: "us-east-1", AccessKey: "test", SecretKey: "key"})

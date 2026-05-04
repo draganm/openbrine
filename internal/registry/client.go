@@ -25,12 +25,12 @@ import (
 	"github.com/opentofu/svchost"
 	"github.com/opentofu/svchost/disco"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/httpclient"
-	"github.com/opentofu/opentofu/internal/registry/response"
-	"github.com/opentofu/opentofu/internal/tracing"
-	"github.com/opentofu/opentofu/internal/tracing/traceattrs"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/httpclient"
+	"github.com/draganm/openbrine/internal/registry/response"
+	"github.com/draganm/openbrine/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing/traceattrs"
+	"github.com/draganm/openbrine/version"
 )
 
 const (
@@ -223,7 +223,7 @@ func (c *Client) ModulePackageLocation(ctx context.Context, packageAddr regaddr.
 				// Note that this only works if the body contains valid JSON syntax.
 				// This was probably not actually the originally intended behavior,
 				// since this fallback was introduced to fix a regression in
-				// https://github.com/opentofu/opentofu/pull/2079 but that didn't
+				// https://github.com/draganm/openbrine/pull/2079 but that didn't
 				// _quite_ restore the original behavior of ignoring the body completely
 				// when using this header. Nonetheless, we're keeping this constraint
 				// to avoid churning this protocol further since registry

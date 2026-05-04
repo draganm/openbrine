@@ -6,8 +6,8 @@
 package backend
 
 import (
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 // CLI is an optional interface that can be implemented to be initialized

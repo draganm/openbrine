@@ -12,11 +12,11 @@ import (
 
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func transformProviders(concrete ConcreteProviderNodeFunc, config *configs.Config, walkOp walkOperation) GraphTransformer {
@@ -893,7 +893,7 @@ func (t *ProviderConfigTransformer) transformSingle(g *Graph, c *configs.Config)
 
 			if t.Operation == walkValidate {
 				// Add a workaround for validating modules by running them as a root module in `tofu validate`
-				// See the discussion in https://github.com/opentofu/opentofu/issues/2862 for more details
+				// See the discussion in https://github.com/draganm/openbrine/issues/2862 for more details
 				for _, alias := range p.Aliases {
 					addNode(alias.Alias)
 				}

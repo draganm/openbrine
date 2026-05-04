@@ -11,7 +11,7 @@ import (
 	"sync"
 
 	"github.com/apparentlymart/go-versions/versions"
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 // FilesystemMirrorSource is a source that reads providers and their metadata

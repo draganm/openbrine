@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/terminal"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/terminal"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestValidateHuman(t *testing.T) {

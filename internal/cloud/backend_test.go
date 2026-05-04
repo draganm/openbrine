@@ -14,13 +14,13 @@ import (
 
 	tfe "github.com/hashicorp/go-tfe"
 	version "github.com/hashicorp/go-version"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	tfversion "github.com/draganm/openbrine/version"
 	"github.com/zclconf/go-cty/cty"
 
-	backendLocal "github.com/opentofu/opentofu/internal/backend/local"
+	backendLocal "github.com/draganm/openbrine/internal/backend/local"
 )
 
 func TestCloud(t *testing.T) {
@@ -278,7 +278,7 @@ func TestCloud_PrepareConfigWithEnvVars(t *testing.T) {
 			},
 		},
 		"with workspace defined by tags overwritten by TF_WORKSPACE": {
-			// see https://github.com/opentofu/opentofu/issues/814 for context
+			// see https://github.com/draganm/openbrine/issues/814 for context
 			config: cty.ObjectVal(map[string]cty.Value{
 				"hostname":     cty.StringVal("foo"),
 				"organization": cty.StringVal("bar"),
@@ -294,10 +294,10 @@ func TestCloud_PrepareConfigWithEnvVars(t *testing.T) {
 		},
 		"with TF_WORKSPACE value different than the workspace name in config": {
 			// This test case has been introduced initially in
-			// https://github.com/opentofu/opentofu/pull/867.
-			// Later, during investigations done for https://github.com/opentofu/opentofu/issues/1787,
+			// https://github.com/draganm/openbrine/pull/867.
+			// Later, during investigations done for https://github.com/draganm/openbrine/issues/1787,
 			// the implementation and the error message was changed but this test case was never updated as part
-			// of the work in https://github.com/opentofu/opentofu/pull/1930
+			// of the work in https://github.com/draganm/openbrine/pull/1930
 			config: cty.ObjectVal(map[string]cty.Value{
 				"hostname":     cty.StringVal("foo"),
 				"organization": cty.StringVal("bar"),
@@ -703,7 +703,7 @@ func TestCloud_setConfigurationFieldsHappyPath(t *testing.T) {
 			expectedForceLocal: true,
 		},
 		"with hostname and workspace tags set, then tags should not be overwritten by TF_WORKSPACE": {
-			// see: https://github.com/opentofu/opentofu/issues/814
+			// see: https://github.com/draganm/openbrine/issues/814
 			obj: cty.ObjectVal(map[string]cty.Value{
 				"organization": cty.NullVal(cty.String),
 				"hostname":     cty.StringVal("opentofu.org"),

@@ -8,8 +8,8 @@ package configs
 import (
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/version"
 )
 
 // LoadConfigFile reads the file at the given path and parses it as a config

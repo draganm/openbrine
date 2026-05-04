@@ -15,10 +15,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/depsfile"
-	"github.com/opentofu/opentofu/internal/e2e"
-	"github.com/opentofu/opentofu/internal/getproviders"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/depsfile"
+	"github.com/draganm/openbrine/internal/e2e"
+	"github.com/draganm/openbrine/internal/getproviders"
 )
 
 // TestProviderTampering tests various ways that the provider plugins in the
@@ -504,7 +504,7 @@ func TestProviderLocksFromPredecessorProjectWithAbsoluteSourceAddr(t *testing.T)
 	// (Historically we had a bug where other commands would re-shim the
 	// dependency locks to refer to registry.opentofu.org/hashicorp/null and
 	// would thus make this fail because no such plugin is available in the
-	// cache directory: https://github.com/opentofu/opentofu/issues/2977 )
+	// cache directory: https://github.com/draganm/openbrine/issues/2977 )
 	_, stderr, err = tf.Run("validate")
 	if err == nil {
 		t.Fatalf("unexpected success from tofu validate; want plugin execution error")

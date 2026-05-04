@@ -13,15 +13,15 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/workdir"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	testing_command "github.com/opentofu/opentofu/internal/command/testing"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/terminal"
+	"github.com/draganm/openbrine/internal/addrs"
+	testing_command "github.com/draganm/openbrine/internal/command/testing"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/terminal"
 )
 
 func TestTest(t *testing.T) {
@@ -1632,7 +1632,7 @@ func TestTest_MockProviderValidationForEach(t *testing.T) {
 	}
 }
 
-// See https://github.com/opentofu/opentofu/issues/3246
+// See https://github.com/draganm/openbrine/issues/3246
 func TestTest_DeprecatedOutputs(t *testing.T) {
 	td := t.TempDir()
 	testCopyDir(t, testFixturePath("test/deprecated_outputs"), td)

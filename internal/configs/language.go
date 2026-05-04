@@ -12,7 +12,7 @@ import (
 	hcVersion "github.com/hashicorp/go-version"
 	"github.com/hashicorp/hcl/v2"
 
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/version"
 )
 
 // validateLanguageBlock checks the validity of a "language" block and returns

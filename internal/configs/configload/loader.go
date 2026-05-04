@@ -13,8 +13,8 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/spf13/afero"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
 )
 
 // A Loader instance is the main entry-point for loading configurations via

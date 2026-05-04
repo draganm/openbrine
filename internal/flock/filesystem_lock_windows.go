@@ -60,7 +60,7 @@ func Lock(f *os.File) error {
 
 // This is a poor implementation of blocking locks, but it a somewhat function patch for the moment.
 // This should eventually be tweaked to use native windows locking.
-// See https://github.com/opentofu/opentofu/issues/3089 for more details.
+// See https://github.com/draganm/openbrine/issues/3089 for more details.
 func LockBlocking(ctx context.Context, f *os.File) error {
 	resultChan := make(chan error)
 

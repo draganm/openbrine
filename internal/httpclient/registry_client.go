@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-retryablehttp"
-	"github.com/opentofu/opentofu/internal/logging"
+	"github.com/draganm/openbrine/internal/logging"
 )
 
 // NewForRegistryRequests is a variant of [New] that deals with some additional

@@ -13,11 +13,11 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/opentofu/opentofu/internal/command/jsonformat/computed/renderers"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/structured"
-	"github.com/opentofu/opentofu/internal/command/jsonformat/structured/attribute_path"
-	"github.com/opentofu/opentofu/internal/command/jsonprovider"
-	"github.com/opentofu/opentofu/internal/plans"
+	"github.com/draganm/openbrine/internal/command/jsonformat/computed/renderers"
+	"github.com/draganm/openbrine/internal/command/jsonformat/structured"
+	"github.com/draganm/openbrine/internal/command/jsonformat/structured/attribute_path"
+	"github.com/draganm/openbrine/internal/command/jsonprovider"
+	"github.com/draganm/openbrine/internal/plans"
 )
 
 type SetDiff struct {
@@ -166,7 +166,7 @@ func TestValue_SimpleBlocks(t *testing.T) {
 				"write_only_attribute": renderers.ValidateWriteOnly(plans.Create, false),
 			}, nil, nil, nil, nil, plans.Create, false),
 		},
-		// Before the fix for https://github.com/opentofu/opentofu/issues/3640, this test was failing randomnly.
+		// Before the fix for https://github.com/draganm/openbrine/issues/3640, this test was failing randomnly.
 		// That was because the write-only attributes diffs could have been generated with NoOp instead of having
 		// the final action of the resource. After the fix, the write-only attributes diffs are generated after
 		// generating the diffs for any non write-only attribute meaning that the action generated from regular
@@ -3062,7 +3062,7 @@ func TestSpecificCases(t *testing.T) {
 				}, plans.Update, false),
 			}, nil, nil, nil, nil, plans.Update, false),
 		},
-		// Following tests are from issue 1805. https://github.com/opentofu/opentofu/issues/1805.
+		// Following tests are from issue 1805. https://github.com/draganm/openbrine/issues/1805.
 		// The issue is about handling unknown dynamic nested blocks. In these cases unknown nested blocks are
 		// not shown at all but they should be listed as unknown in the diff.
 		"issues/1805/create_with_unknown_dynamic_nested_block": {

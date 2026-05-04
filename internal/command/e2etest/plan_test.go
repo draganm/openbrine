@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/opentofu/opentofu/internal/e2e"
+	"github.com/draganm/openbrine/internal/e2e"
 )
 
 // The tests in this file are for the following sequence:
@@ -132,7 +132,7 @@ func TestPlanOnDeprecated(t *testing.T) {
 func TestPlanOnMultipleDeprecatedMarksSliceBug(t *testing.T) {
 	t.Parallel()
 
-	// Test for [the bug](https://github.com/opentofu/opentofu/issues/3104) where modifying
+	// Test for [the bug](https://github.com/draganm/openbrine/issues/3104) where modifying
 	// pathMarks slice during iteration would cause slice bounds errors when multiple
 	// deprecated marks exist
 	fixturePath := filepath.Join("testdata", "multiple-deprecated-marks-slice-bug")

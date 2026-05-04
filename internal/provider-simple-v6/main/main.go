@@ -6,10 +6,10 @@
 package main
 
 import (
-	"github.com/opentofu/opentofu/internal/grpcwrap"
-	plugin "github.com/opentofu/opentofu/internal/plugin6"
-	simple "github.com/opentofu/opentofu/internal/provider-simple-v6"
-	"github.com/opentofu/opentofu/internal/tfplugin6"
+	"github.com/draganm/openbrine/internal/grpcwrap"
+	plugin "github.com/draganm/openbrine/internal/plugin6"
+	simple "github.com/draganm/openbrine/internal/provider-simple-v6"
+	"github.com/draganm/openbrine/internal/tfplugin6"
 )
 
 func main() {

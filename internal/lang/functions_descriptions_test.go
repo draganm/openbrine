@@ -8,8 +8,8 @@ package lang
 import (
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/lang/funcs"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/lang/funcs"
 )
 
 func TestFunctionDescriptions(t *testing.T) {

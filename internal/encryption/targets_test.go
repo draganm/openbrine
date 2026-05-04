@@ -13,16 +13,16 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/encryption/config"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/static"
-	"github.com/opentofu/opentofu/internal/encryption/method"
-	"github.com/opentofu/opentofu/internal/encryption/method/aesgcm"
-	"github.com/opentofu/opentofu/internal/encryption/method/unencrypted"
-	"github.com/opentofu/opentofu/internal/encryption/registry"
-	"github.com/opentofu/opentofu/internal/encryption/registry/lockingencryptionregistry"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/encryption/config"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/static"
+	"github.com/draganm/openbrine/internal/encryption/method"
+	"github.com/draganm/openbrine/internal/encryption/method/aesgcm"
+	"github.com/draganm/openbrine/internal/encryption/method/unencrypted"
+	"github.com/draganm/openbrine/internal/encryption/registry"
+	"github.com/draganm/openbrine/internal/encryption/registry/lockingencryptionregistry"
 )
 
 func TestBaseEncryption_methodConfigsFromTargetAndSetup(t *testing.T) {
@@ -372,7 +372,7 @@ func TestBaseEncryption_methodConfigsFromTargetAndSetup(t *testing.T) {
 				unencrypted.Is,
 			},
 		},
-		// In https://github.com/opentofu/opentofu/issues/3482 was discovered that interpolation for
+		// In https://github.com/draganm/openbrine/issues/3482 was discovered that interpolation for
 		// target.method does not work, but only literal reference.
 		// This solves the inconsistencies between the way string expressions are evaluated for state.method vs method.keys.
 		"json-config-loads-state-method-interpolated": {

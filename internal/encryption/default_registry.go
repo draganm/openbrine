@@ -6,16 +6,16 @@
 package encryption
 
 import (
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/aws_kms"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/azure_vault"
-	externalKeyProvider "github.com/opentofu/opentofu/internal/encryption/keyprovider/external"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/gcp_kms"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/openbao"
-	"github.com/opentofu/opentofu/internal/encryption/keyprovider/pbkdf2"
-	"github.com/opentofu/opentofu/internal/encryption/method/aesgcm"
-	externalMethod "github.com/opentofu/opentofu/internal/encryption/method/external"
-	"github.com/opentofu/opentofu/internal/encryption/method/unencrypted"
-	"github.com/opentofu/opentofu/internal/encryption/registry/lockingencryptionregistry"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/aws_kms"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/azure_vault"
+	externalKeyProvider "github.com/draganm/openbrine/internal/encryption/keyprovider/external"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/gcp_kms"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/openbao"
+	"github.com/draganm/openbrine/internal/encryption/keyprovider/pbkdf2"
+	"github.com/draganm/openbrine/internal/encryption/method/aesgcm"
+	externalMethod "github.com/draganm/openbrine/internal/encryption/method/external"
+	"github.com/draganm/openbrine/internal/encryption/method/unencrypted"
+	"github.com/draganm/openbrine/internal/encryption/registry/lockingencryptionregistry"
 )
 
 var DefaultRegistry = lockingencryptionregistry.New()

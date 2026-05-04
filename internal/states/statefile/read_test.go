@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/encryption/enctest"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/encryption/enctest"
 )
 
 func TestReadErrNoState_emptyFile(t *testing.T) {

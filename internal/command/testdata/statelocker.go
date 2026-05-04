@@ -11,8 +11,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/command/clistate"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/command/clistate"
+	"github.com/draganm/openbrine/internal/states/statemgr"
 )
 
 func main() {

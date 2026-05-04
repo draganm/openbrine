@@ -10,13 +10,13 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/dag"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/refactoring"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/dag"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/refactoring"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // DiffTransformer is a GraphTransformer that adds graph nodes representing
@@ -185,7 +185,7 @@ func (t *DiffTransformer) Transform(_ context.Context, g *Graph) error {
 				// We need to set CBD to the node here, otherwise if CBD flag was caused
 				// by the CBD descendant of the node (and not the config) and this is the sole node being updated
 				// in the current apply operation, we will lose the CBD flag in the state file and cause the "cycle" error down the line.
-				// For more details, see the issue https://github.com/opentofu/opentofu/issues/2398
+				// For more details, see the issue https://github.com/draganm/openbrine/issues/2398
 				if cn, ok := node.(GraphNodeDestroyerCBD); ok {
 					log.Printf("[TRACE] DiffTransformer: %s implements GraphNodeDestroyerCBD, setting CBD to true", addr)
 					// Setting CBD to true

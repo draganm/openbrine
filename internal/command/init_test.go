@@ -22,22 +22,22 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/go-version"
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/flags"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/flags"
+	"github.com/draganm/openbrine/internal/command/workdir"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/depsfile"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/getmodules"
-	"github.com/opentofu/opentofu/internal/getproviders"
-	"github.com/opentofu/opentofu/internal/providercache"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/states/statemgr"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/depsfile"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/getmodules"
+	"github.com/draganm/openbrine/internal/getproviders"
+	"github.com/draganm/openbrine/internal/providercache"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/states/statemgr"
 )
 
 func TestInit_empty(t *testing.T) {
@@ -842,7 +842,7 @@ func TestInit_backendCli_no_config_block(t *testing.T) {
 
 	// The previous used output here was the stderr. That was correct in terms of the MockUi (and cli.BasicUi) implementation.
 	// The was not correct in terms of OpenTofu configuration. The Ui configured for OpenTofu, sends the warning diagnostics
-	// to stdout and not stderr. (see https://github.com/opentofu/opentofu/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/cmd/tofu/main.go#L49-L51)
+	// to stdout and not stderr. (see https://github.com/draganm/openbrine/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/cmd/tofu/main.go#L49-L51)
 	// This change from stderr to stdout has been done while we migrated the init command to use views, which the underlying
 	// logic, writes the warnings to stdout.
 	// Before the change, the MockUi used in this test was not considering this particularity of OpenTofu.
@@ -1749,7 +1749,7 @@ func TestInit_getProviderDetectedDuplicate(t *testing.T) {
 	//
 	// The previous used output here was the stderr. That was correct in terms of the MockUi (and cli.BasicUi) implementation.
 	// The was not correct in terms of OpenTofu configuration. The Ui configured for OpenTofu, sends the warning diagnostics
-	// to stdout and not stderr. (see https://github.com/opentofu/opentofu/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/cmd/tofu/main.go#L49-L51)
+	// to stdout and not stderr. (see https://github.com/draganm/openbrine/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/cmd/tofu/main.go#L49-L51)
 	// This change from stderr to stdout has been done while we migrated the init command to use views, which the underlying
 	// logic, writes the warnings to stdout.
 	// Before the change, the MockUi used in this test was not considering this particularity of OpenTofu.
@@ -1889,7 +1889,7 @@ func TestInit_providerSource(t *testing.T) {
 	//
 	// The previous used output here was the stderr. That was correct in terms of the MockUi (and cli.BasicUi) implementation.
 	// The was not correct in terms of OpenTofu configuration. The Ui configured for OpenTofu, sends the warning diagnostics
-	// to stdout and not stderr. (seehttps://github.com/opentofu/opentofu/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/cmd/tofu/main.go#L49-L51)
+	// to stdout and not stderr. (seehttps://github.com/draganm/openbrine/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/cmd/tofu/main.go#L49-L51)
 	// This change from stderr to stdout has been done while we migrated the init command to use views, which the underlying
 	// logic, writes the warnings to stdout.
 	// Before the change, the MockUi used in this test was not considering this particularity of OpenTofu.

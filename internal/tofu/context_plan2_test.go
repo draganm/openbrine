@@ -22,17 +22,17 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/checks"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/plugins"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/checks"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/plugins"
 
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestContext2Plan_removedDuringRefresh(t *testing.T) {
@@ -4572,7 +4572,7 @@ resource "test_object" "b" {
 // TestContext2Plan_triggeredByRecreate tests that replace_triggered_by fires
 // when the referenced resource is being created from scratch (e.g. after
 // "tofu state rm"), not just when it is being updated or replaced.
-// Regression test for https://github.com/opentofu/opentofu/issues/3714
+// Regression test for https://github.com/draganm/openbrine/issues/3714
 func TestContext2Plan_triggeredByRecreate(t *testing.T) {
 	m := testModuleInline(t, map[string]string{
 		"main.tf": `
@@ -7847,7 +7847,7 @@ import {
 
 func TestContext2Plan_providerForEachWithOrphanResourceInstanceNotUsingForEach(t *testing.T) {
 	// This test is to cover the bug reported in this issue:
-	//    https://github.com/opentofu/opentofu/issues/2334
+	//    https://github.com/draganm/openbrine/issues/2334
 	//
 	// The bug there was that OpenTofu was failing to evaluate the provider
 	// instance key expression for a graph node representing a "orphaned"
@@ -9036,7 +9036,7 @@ func featuresBlockTestSchema() *configschema.Block {
 }
 
 // TestContext2Plan_moduleDependsOnWithCheck is a regression test for
-// https://github.com/opentofu/opentofu/issues/3060
+// https://github.com/draganm/openbrine/issues/3060
 // "Depending on a module with a check in it causes a dependency cycle"
 //
 // When module.dependent has depends_on = [module.base], and both modules

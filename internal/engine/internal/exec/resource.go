@@ -8,8 +8,8 @@ package exec
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/states"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/states"
 )
 
 // ManagedResourceObjectFinalPlan represents a final plan -- ready to actually

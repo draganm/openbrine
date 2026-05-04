@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/command/workdir"
+	"github.com/draganm/openbrine/internal/command/workdir"
 )
 
 func TestMetadataFunctions_error(t *testing.T) {

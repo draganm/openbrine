@@ -14,13 +14,13 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/plugins"
-	"github.com/opentofu/opentofu/internal/providers"
-	"github.com/opentofu/opentofu/internal/provisioners"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/plugins"
+	"github.com/draganm/openbrine/internal/providers"
+	"github.com/draganm/openbrine/internal/provisioners"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 func TestContext2Validate_badCount(t *testing.T) {
@@ -2576,7 +2576,7 @@ func TestContext2Validate_importWithForEachOnUnknown(t *testing.T) {
 	// This tests checks that a validate run works correctly when the import block is configured with a
 	// for_each statement on unknown values.
 	// In this case, the validation is skipped since the expansion cannot be performed.
-	// Related to https://github.com/opentofu/opentofu/issues/3563
+	// Related to https://github.com/draganm/openbrine/issues/3563
 	m := testModuleInline(t, map[string]string{
 		"main.tf": `
 			variable "server_ids" {
@@ -2643,7 +2643,7 @@ func TestContext2Validate_importIntoModuleResource(t *testing.T) {
 	// This was added to double check a bug that was discovered in [ImportResolver#ValidateImportIDs]
 	// where the context used for evaluating the `id` expression was wrong (the rootCtx was meant to be
 	// used but was used the node context instead)
-	// Related to: https://github.com/opentofu/opentofu/issues/3562
+	// Related to: https://github.com/draganm/openbrine/issues/3562
 	cases := map[string]map[string]string{
 		"direct import": {
 			"mod/main.tf": `
@@ -2753,7 +2753,7 @@ func TestContext2Validate_importIntoUnexistingResourceBlock(t *testing.T) {
 	// This is useful for the situations where the config generation flag is turned on.
 	// In those cases, the execution should run as intended without the configuration block,
 	// one of the purpose being to generate the missing block.
-	// Related to: https://github.com/opentofu/opentofu/issues/3615
+	// Related to: https://github.com/draganm/openbrine/issues/3615
 	p := simpleMockProvider()
 	hook := new(MockHook)
 	ctx := testContext2(t, &ContextOpts{

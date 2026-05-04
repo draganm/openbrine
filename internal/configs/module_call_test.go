@@ -19,7 +19,7 @@ import (
 	"github.com/zclconf/go-cty-debug/ctydebug"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 func TestLoadModuleCall(t *testing.T) {
@@ -154,7 +154,7 @@ func TestLoadModuleCall(t *testing.T) {
 	// else properly.
 	for _, m := range gotModules {
 		// This is a structural issue which existed before static evaluation, but has been made worse by it
-		// See https://github.com/opentofu/opentofu/issues/1467 for more details
+		// See https://github.com/draganm/openbrine/issues/1467 for more details
 		eval := NewStaticEvaluator(nil, RootModuleCallForTesting())
 		diags := m.decodeStaticFields(t.Context(), eval)
 		if diags.HasErrors() {

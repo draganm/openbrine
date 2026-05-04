@@ -15,7 +15,7 @@ import (
 	"github.com/hashicorp/hcl/v2/hcldec"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // Evalable is implemented by types that encapsulate expressions that can be
@@ -36,7 +36,7 @@ type Evalable interface {
 	// somehow to return a tree that shows when a reference appears as part
 	// of an argument to a function, to address the problem described in
 	// this issue:
-	//     https://github.com/opentofu/opentofu/issues/2630
+	//     https://github.com/draganm/openbrine/issues/2630
 	FunctionCalls() iter.Seq[*hcl.StaticCall]
 
 	// Evaluate performs the actual expression evaluation, using the given

@@ -13,10 +13,10 @@ import (
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/getmodules"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/getmodules"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // TestCommand represents the OpenTofu a given run block will execute, plan

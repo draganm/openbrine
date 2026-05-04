@@ -6,9 +6,9 @@
 package arguments
 
 import (
-	"github.com/opentofu/opentofu/internal/command/flags"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/flags"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // Test represents the command-line arguments for the test command.

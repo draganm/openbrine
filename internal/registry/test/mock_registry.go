@@ -15,7 +15,7 @@ import (
 	"github.com/opentofu/svchost/disco"
 	"github.com/opentofu/svchost/svcauth"
 
-	"github.com/opentofu/opentofu/internal/registry/response"
+	"github.com/draganm/openbrine/internal/registry/response"
 )
 
 // Disco return a *disco.Disco mapping registry.opentofu.org, localhost,

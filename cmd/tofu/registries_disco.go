@@ -13,9 +13,9 @@ import (
 	"github.com/opentofu/svchost/disco"
 	"github.com/opentofu/svchost/svcauth"
 
-	"github.com/opentofu/opentofu/internal/command/cliconfig"
-	"github.com/opentofu/opentofu/internal/httpclient"
-	"github.com/opentofu/opentofu/internal/logging"
+	"github.com/draganm/openbrine/internal/command/cliconfig"
+	"github.com/draganm/openbrine/internal/httpclient"
+	"github.com/draganm/openbrine/internal/logging"
 )
 
 // newServiceDiscovery returns a newly-created [disco.Disco] object that is

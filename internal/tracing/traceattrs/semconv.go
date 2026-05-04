@@ -24,7 +24,7 @@ import (
 	// "go.opentelemetry.io/otel/sdk".
 	semconv "go.opentelemetry.io/otel/semconv/v1.40.0"
 
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/version"
 )
 
 // NewResource constructs a *resource.Resource that should be used when

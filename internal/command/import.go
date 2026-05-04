@@ -14,15 +14,15 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/mitchellh/cli"
-	"github.com/opentofu/opentofu/internal/tracing"
+	"github.com/draganm/openbrine/internal/tracing"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/command/arguments"
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/backend"
+	"github.com/draganm/openbrine/internal/command/arguments"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 // ImportCommand is a cli.Command implementation that imports resources
@@ -322,7 +322,7 @@ func (c *ImportCommand) Run(rawArgs []string) int {
 func (c *ImportCommand) configureBackendFlags(args *arguments.Import) {
 	c.Meta.ignoreRemoteVersion = args.Backend.IgnoreRemoteVersion
 	// TODO meta-refactor: unify these 2 args attributes with the state flags in arguments.extendedFlagSet
-	//  https://github.com/opentofu/opentofu/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/internal/command/arguments/extended.go#L320-L321
+	//  https://github.com/draganm/openbrine/blob/db8c872defd8666618649ef7e29fa2b809adfd5e/internal/command/arguments/extended.go#L320-L321
 	c.Meta.stateLock = args.State.Lock
 	c.Meta.stateLockTimeout = args.State.LockTimeout
 

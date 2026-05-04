@@ -12,9 +12,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/opentofu/opentofu/internal/command/views"
-	"github.com/opentofu/opentofu/internal/repl"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/command/views"
+	"github.com/draganm/openbrine/internal/repl"
+	"github.com/draganm/openbrine/internal/tfdiags"
 
 	"github.com/chzyer/readline"
 )

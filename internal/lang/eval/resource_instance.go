@@ -8,7 +8,7 @@ package eval
 import (
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
+	"github.com/draganm/openbrine/internal/addrs"
 )
 
 // DesiredResourceInstance describes a resource instance that is part of
@@ -128,7 +128,7 @@ type DesiredResourceInstance struct {
 	// change action, and so is always false for other modes.
 	//
 	// FIXME: Probably also need an "unknown" representation for this, so
-	// that we can eventually do https://github.com/opentofu/opentofu/issues/2523 .
+	// that we can eventually do https://github.com/draganm/openbrine/issues/2523 .
 	CreateBeforeDestroy bool
 
 	// If RejectDeleteAction is true then the planning phase should return an
@@ -139,7 +139,7 @@ type DesiredResourceInstance struct {
 	// change action, and so is always false for other modes.
 	//
 	// FIXME: Probably also need an "unknown" representation for this, so
-	// that we can eventually do https://github.com/opentofu/opentofu/issues/2522 .
+	// that we can eventually do https://github.com/draganm/openbrine/issues/2522 .
 	RejectDeleteAction bool
 
 	// ReplaceTriggeredBy describes zero ore more attribute prefixes within

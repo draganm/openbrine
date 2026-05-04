@@ -11,7 +11,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // ViewType represents which view layer to use for a given command. Not all

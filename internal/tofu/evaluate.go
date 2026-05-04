@@ -15,19 +15,19 @@ import (
 	"time"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/plans/objchange"
+	"github.com/draganm/openbrine/internal/plans/objchange"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/didyoumean"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configschema"
+	"github.com/draganm/openbrine/internal/didyoumean"
+	"github.com/draganm/openbrine/internal/instances"
+	"github.com/draganm/openbrine/internal/lang"
+	"github.com/draganm/openbrine/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // Evaluator provides the necessary contextual data for evaluating expressions
@@ -1101,8 +1101,8 @@ func (d *evaluationStateData) GetOutput(_ context.Context, addr addrs.OutputValu
 
 	output := d.Evaluator.State.OutputValue(addr.Absolute(d.ModulePath))
 
-	// https://github.com/opentofu/opentofu/issues/257
-	// If the output is null - it does not serialize as part of the node_output state https://github.com/opentofu/opentofu/blob/4b623c56ffe9e6c1dc345e54470b71b0f261297a/internal/tofu/node_output.go#L592-L596
+	// https://github.com/draganm/openbrine/issues/257
+	// If the output is null - it does not serialize as part of the node_output state https://github.com/draganm/openbrine/blob/4b623c56ffe9e6c1dc345e54470b71b0f261297a/internal/tofu/node_output.go#L592-L596
 	// In such a case, we should simply return a nil value because OpenTofu test crash to evaluate for invalid memory address or nil pointer dereference
 	if output == nil {
 		return cty.NilVal, diags
@@ -1171,7 +1171,7 @@ func (d *evaluationStateData) getEphemeralResourceInstanceValue(schema *configsc
 	// values of the defered instance would be deferred too.
 	// Instead, we want to return as much information as possible for the requested ephemeral resource.
 	// But, during the encoding of the deferred value, the unknown fields are converted to nil and are not converted back
-	// because of https://github.com/opentofu/opentofu/blob/cba3902c0bf20531ee27d6c76e907fa7348b74e6/internal/states/instance_object.go#L116-L118.
+	// because of https://github.com/draganm/openbrine/blob/cba3902c0bf20531ee27d6c76e907fa7348b74e6/internal/states/instance_object.go#L116-L118.
 	// Therefore, we use the same function to convert null values to unknowns and keep as much of the configuration
 	// of the resource in the returned value.
 	if v.Deferred {

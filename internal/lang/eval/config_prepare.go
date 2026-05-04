@@ -10,11 +10,11 @@ import (
 
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/configgraph"
-	"github.com/opentofu/opentofu/internal/lang/eval/internal/evalglue"
-	"github.com/opentofu/opentofu/internal/plans/objchange"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/configgraph"
+	"github.com/draganm/openbrine/internal/lang/eval/internal/evalglue"
+	"github.com/draganm/openbrine/internal/plans/objchange"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 // precheckedModuleInstance deals with the common part of both

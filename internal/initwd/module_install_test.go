@@ -19,15 +19,15 @@ import (
 	version "github.com/hashicorp/go-version"
 	"github.com/opentofu/svchost"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configload"
-	"github.com/opentofu/opentofu/internal/copy"
-	"github.com/opentofu/opentofu/internal/getmodules"
-	"github.com/opentofu/opentofu/internal/registry"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/configs/configload"
+	"github.com/draganm/openbrine/internal/copy"
+	"github.com/draganm/openbrine/internal/getmodules"
+	"github.com/draganm/openbrine/internal/registry"
+	"github.com/draganm/openbrine/internal/tfdiags"
 
-	_ "github.com/opentofu/opentofu/internal/logging"
+	_ "github.com/draganm/openbrine/internal/logging"
 )
 
 func TestMain(m *testing.M) {
@@ -281,7 +281,7 @@ func TestModuleInstaller_Prerelease(t *testing.T) {
 			// quirks of our version constraint matching.
 			//
 			// For more information:
-			//     https://github.com/opentofu/opentofu/issues/2117
+			//     https://github.com/draganm/openbrine/issues/2117
 		},
 		{
 			name:        "err",
@@ -979,7 +979,7 @@ func TestIsSubDirNonExistent(t *testing.T) {
 }
 
 // TestModuleInstaller_nonExistentSubmodule ensures that the error message returned when a module does not exist in an existing module
-// is not that it's a bug in OpenTofu. See issue https://github.com/opentofu/opentofu/issues/3142 for more information
+// is not that it's a bug in OpenTofu. See issue https://github.com/draganm/openbrine/issues/3142 for more information
 //
 // Code is taken from tests above
 func TestModuleInstaller_nonExistentSubmodule(t *testing.T) {

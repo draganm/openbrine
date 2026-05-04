@@ -9,8 +9,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/plans/planfile"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/plans/planfile"
 )
 
 // NOTE: Temporary file until this branch is cleaned up.

@@ -12,20 +12,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/opentofu/opentofu/internal/lang/marks"
+	"github.com/draganm/openbrine/internal/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/command/jsonchecks"
-	"github.com/opentofu/opentofu/internal/command/jsonconfig"
-	"github.com/opentofu/opentofu/internal/command/jsonstate"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/tofu"
-	"github.com/opentofu/opentofu/version"
+	"github.com/draganm/openbrine/internal/addrs"
+	"github.com/draganm/openbrine/internal/command/jsonchecks"
+	"github.com/draganm/openbrine/internal/command/jsonconfig"
+	"github.com/draganm/openbrine/internal/command/jsonstate"
+	"github.com/draganm/openbrine/internal/configs"
+	"github.com/draganm/openbrine/internal/plans"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/tofu"
+	"github.com/draganm/openbrine/version"
 )
 
 // FormatVersion represents the version of the json format and will be

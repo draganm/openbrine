@@ -19,11 +19,11 @@ import (
 
 	multierror "github.com/hashicorp/go-multierror"
 
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/flock"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/states/statefile"
-	"github.com/opentofu/opentofu/internal/tofu"
+	"github.com/draganm/openbrine/internal/encryption"
+	"github.com/draganm/openbrine/internal/flock"
+	"github.com/draganm/openbrine/internal/states"
+	"github.com/draganm/openbrine/internal/states/statefile"
+	"github.com/draganm/openbrine/internal/tofu"
 )
 
 // Filesystem is a full state manager that uses a file in the local filesystem
@@ -272,7 +272,7 @@ func (s *Filesystem) persistState(schemas *tofu.Schemas) error {
 	// Write state into a buffer first so we can pretty-print the JSON before
 	// writing to disk. Pretty-printed state files produce much more readable
 	// diffs for users who track state in version control systems.
-	// See https://github.com/opentofu/opentofu/issues/1947
+	// See https://github.com/draganm/openbrine/issues/1947
 	var buf bytes.Buffer
 	if err := statefile.Write(s.file, &buf, s.encryption); err != nil {
 		return err

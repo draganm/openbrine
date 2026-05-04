@@ -8,7 +8,7 @@ package views
 import (
 	"io"
 
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/draganm/openbrine/internal/tfdiags"
 )
 
 type Fmt interface {
